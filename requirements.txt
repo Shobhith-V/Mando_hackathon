@@ -30,5 +30,5 @@ langchain>=0.1.13          # Optional: Pipeline framework
 # Misc
 python-magic>=0.4.27       # File type detection
 python-dotenv>=1.0.1       # Load API keys from .env file
-streamlit-lottie
-Pillow
+streamlit-lottie>=0.0.5
+Pillow>=10.0.0
