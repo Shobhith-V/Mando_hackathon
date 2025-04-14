@@ -1,0 +1,32 @@
+# Streamlit & UI
+streamlit>=1.30
+Pillow>=10.0.0
+
+# Document parsing
+PyMuPDF>=1.23.5           # PDF
+python-docx>=0.8.11       # DOCX
+python-pptx>=0.6.21       # PPTX
+openpyxl>=3.1.2           # XLSX
+pandas>=2.1.4             # CSV, XLSX
+chardet>=5.2.0            # Encoding detection for TXT/CSV
+
+# OCR
+pytesseract>=0.3.10
+opencv-python>=4.9.0.80
+
+# Web crawling
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+
+# Semantic search
+sentence-transformers>=2.2.2
+faiss-cpu>=1.7.4           # or use faiss-gpu if you plan on GPU
+
+# OpenAI / LLM integration
+openai>=1.14.2             # Optional: GPT-3.5/4
+tiktoken>=0.5.2            # Token counting (if using OpenAI)
+langchain>=0.1.13          # Optional: Pipeline framework
+
+# Misc
+python-magic>=0.4.27       # File type detection
+python-dotenv>=1.0.1       # Load API keys from .env file
