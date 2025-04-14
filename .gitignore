@@ -1,0 +1,19 @@
+# Don't upload API keys or secrets
+.env
+
+# IDE and Python junk
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+
+# VS Code config
+.vscode/
+
+# Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints/
+
+# Streamlit artifacts
+.streamlit/config.toml
