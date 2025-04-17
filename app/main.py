@@ -86,7 +86,6 @@ def show_qa_page():
         st.success("✅ Answer:")
         st.write(answer)
 
-# --------- PAGE ROUTER ---------
 if "page" not in st.session_state:
     st.session_state.page = "home"
 
