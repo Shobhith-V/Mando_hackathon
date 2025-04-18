@@ -6,7 +6,7 @@ import json
 from backend.document_parser import parse_file
 from backend.ocr_engine import ocr_image
 from backend.semantic_search import add_to_index, search
-from backend.qa_engine import answer_question  # Gemini-powered backend
+from backend.qa_engine import answer_question  
 
 # --------- CONFIG ---------
 st.set_page_config(
