@@ -1,0 +1,98 @@
+def show_qa_page():
+    show_sidebar()
+    st.image(logo, width=120)
+    st.title("📚 Mando AI Document Q&A Assistant")
+    st.markdown("Upload documents and ask questions – like a conversation with the AI.")
+
+    # Initialize greeting flag
+    if 'greeting_shown' not in st.session_state:
+        st.session_state.greeting_shown = False
+
+    # Load and render chat history
+    chat_history = []
+    if st.session_state.current_chat_id:
+        chat_history = st.session_state.chat_history.get(st.session_state.current_chat_id, [])
+
+    # Build HTML for chat messages
+    messages_html = []
+    if not st.session_state.greeting_shown and st.session_state.user_name and chat_history:
+        messages_html.append(
+            f"<div style='text-align:left; margin-bottom:10px;'><span style='background-color:#7855d6; color:white; padding:8px; border-radius:8px; display:inline-block;'>Hey {st.session_state.user_name}, I see your past work here. Let's continue!</span></div>"
+        )
+        st.session_state.greeting_shown = True
+
+    for chat in chat_history:
+        # User question on RIGHT (blue)
+        messages_html.append(
+            f"<div style='text-align:right; margin-bottom:10px;'><span style='background-color:#0084ff; color:white; padding:8px; border-radius:8px; display:inline-block;'>{chat['question']}</span></div>"
+        )
+        # AI answer on LEFT (Mando purple)
+        messages_html.append(
+            f"<div style='text-align:left; margin-bottom:10px;'><span style='background-color:#7855d6; color:white; padding:8px; border-radius:8px; display:inline-block;'>{chat['answer']}</span></div>"
+        )
+    st.markdown(
+        """
+        <div style='height:60vh; overflow-y:auto; padding:10px; border:1px solid #ccc; background:#f9f9f9;'>
+        """ + "".join(messages_html) + """
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    # Input form at bottom
+    with st.form(key='chat_form', clear_on_submit=True):
+        uploaded_files = st.file_uploader(
+            "📤 Attach files (optional)",
+            type=["pdf","docx","pptx","xlsx","csv","png","jpg","jpeg","txt","json"],
+            accept_multiple_files=True
+        )
+        question = st.text_input("❓ Your message:")
+        submitted = st.form_submit_button("Send")
+
+    if submitted:
+        if not question.strip():
+            st.warning("Please enter a message.")
+            return
+
+        text_chunks = []
+        image_files = []
+        sources = []
+
+        if uploaded_files:
+            st.info("🔄 Processing attachments...")
+            for file in uploaded_files:
+                ext = file.name.split('.')[-1].lower()
+                sources.append(file.name)
+                if ext in ["png","jpg","jpeg"]:
+                    image_files.append(file)
+                    text = ocr_image(file)
+                else:
+                    text = parse_file(file, ext)
+                chunks = [(text[i:i+500], file.name) for i in range(0, len(text), 500)]
+                text_chunks.extend(chunks)
+            add_to_index(text_chunks)
+            results = search(question)
+            save_context(text_chunks, image_files, sources, results)
+        else:
+            results = get_contextual_results(question)
+            sources = st.session_state.get("last_sources", [])
+            image_files = st.session_state.get("last_images", [])
+
+        # Generate AI answer
+        answer = answer_question(question, results, image_files)
+
+        # Append to history
+        if st.session_state.current_chat_id:
+            st.session_state.chat_history[st.session_state.current_chat_id].append({
+                "question": question,
+                "answer": answer,
+                "sources": sources,
+                "timestamp": str(datetime.datetime.now())
+            })
+            st.session_state.global_history.append({
+                "question": question,
+                "answer": answer,
+                "sources": sources,
+                "timestamp": str(datetime.datetime.now())
+            })
+            save_history()
