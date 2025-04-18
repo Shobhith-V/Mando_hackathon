@@ -1,45 +1,37 @@
 import fitz  # PyMuPDF
-import docx
-import pptx
-import pandas as pd
-import json
+import io
+from PIL import Image
+from backend.ocr_engine import ocr_image_bytes  
 
 def parse_pdf(file):
     try:
-        # Ensure file is read as byte stream
         doc = fitz.open(stream=file.read(), filetype="pdf")
-        return "\n".join([page.get_text() for page in doc])
+        full_text = []
+        
+        for page_num, page in enumerate(doc):
+            # 1. Extract visible text
+            page_text = page.get_text()
+            if page_text:
+                full_text.append(f"Page {page_num+1} Text:\n{page_text}")
+            
+            # 2. Extract and OCR images
+            img_list = page.get_images(full=True)
+            
+            for img_index, img in enumerate(img_list):
+                xref = img[0]
+                base_image = doc.extract_image(xref)
+                
+                # Use centralized OCR function
+                ocr_result = ocr_image_bytes(base_image["image"])
+                
+                full_text.append(
+                    f"\nPage {page_num+1} Image {img_index+1} OCR:\n{ocr_result}"
+                )
+        
+        return "\n".join(full_text)
     except Exception as e:
-        return f"Error parsing PDF: {e}"
-
-def parse_docx(file):
-    try:
-        doc = docx.Document(file)
-        return "\n".join([p.text for p in doc.paragraphs])
-    except Exception as e:
-        return f"Error parsing DOCX: {e}"
-
-def parse_pptx(file):
-    try:
-        prs = pptx.Presentation(file)
-        text = []
-        for slide in prs.slides:
-            for shape in slide.shapes:
-                if hasattr(shape, "text"):
-                    text.append(shape.text)
-        return "\n".join(text)
-    except Exception as e:
-        return f"Error parsing PPTX: {e}"
-
-def parse_csv_or_excel(file, filetype):
-    try:
-        if filetype == "csv":
-            df = pd.read_csv(file)
-        else:
-            df = pd.read_excel(file)
-        return df.to_string(index=False)
-    except Exception as e:
-        return f"Error parsing CSV/Excel: {e}"
+        return f"PDF Error: {str(e)}"
+    
 
 def parse_txt(file):
     try:
@@ -57,12 +49,6 @@ def parse_file(file, filetype):
     try:
         if filetype == "pdf":
             return parse_pdf(file)
-        elif filetype == "docx":
-            return parse_docx(file)
-        elif filetype == "pptx":
-            return parse_pptx(file)
-        elif filetype in ["csv", "xlsx"]:
-            return parse_csv_or_excel(file, filetype)
         elif filetype == "txt":
             return parse_txt(file)
         elif filetype == "json":
