@@ -2,6 +2,9 @@ import fitz  # PyMuPDF
 import io
 from PIL import Image
 from backend.ocr_engine import ocr_image_bytes  
+from pptx import Presentation
+from io import BytesIO
+import os
 
 def parse_pdf(file):
     try:
@@ -39,11 +42,69 @@ def parse_txt(file):
     except Exception as e:
         return f"Error parsing TXT: {e}"
 
+import json
+
 def parse_json(file):
     try:
-        return file.read().decode("utf-8")  # You can later json.loads this
+        content = file.read().decode("utf-8")
+        data = json.loads(content)
+        return data  # Return dictionary or list
     except Exception as e:
-        return f"Error parsing JSON: {e}"
+        return f"JSON Error: {str(e)}"
+
+    
+import pandas as pd
+
+def parse_csv(file):
+    try:
+        df = pd.read_csv(file)
+        return df  # Return DataFrame for downstream use
+    except Exception as e:
+        return f"CSV Error: {str(e)}"
+
+def parse_xlsx(file):
+    try:
+        df = pd.read_excel(file)
+        return df
+    except Exception as e:
+        return f"XLSX Error: {str(e)}"
+
+
+def parse_pptx(file, image_output_dir="pptx_images"):
+    try:
+        prs = Presentation(file)
+        text_runs = []
+        images = []
+
+        # Create output directory for images if it doesn't exist
+        if not os.path.exists(image_output_dir):
+            os.makedirs(image_output_dir)
+
+        for slide_idx, slide in enumerate(prs.slides):
+            for shape_idx, shape in enumerate(slide.shapes):
+                if hasattr(shape, "text"):
+                    text_runs.append(shape.text)
+                if shape.shape_type == 13:  # PICTURE
+                    image = shape.image
+                    image_bytes = image.blob
+                    image_format = image.ext  # e.g., 'jpeg', 'png'
+                    image_filename = f"slide{slide_idx+1}_img{shape_idx+1}.{image_format}"
+                    image_path = os.path.join(image_output_dir, image_filename)
+
+                    # Save image
+                    with open(image_path, "wb") as f:
+                        f.write(image_bytes)
+                    images.append(image_path)
+
+        result = {
+            "text": "\n".join(text_runs),
+            "images": images  # List of image file paths
+        }
+        return result
+    except Exception as e:
+        return f"PPTX Error: {str(e)}"
+
+
 
 def parse_file(file, filetype):
     try:
@@ -53,7 +114,14 @@ def parse_file(file, filetype):
             return parse_txt(file)
         elif filetype == "json":
             return parse_json(file)
+        elif filetype == "csv":
+            return parse_csv(file)
+        elif filetype == "xlsx":
+            return parse_xlsx(file)
+        elif filetype == "pptx":
+            return parse_pptx(file)
         else:
             return "Unsupported file type"
     except Exception as e:
         return f"Error parsing file: {e}"
+

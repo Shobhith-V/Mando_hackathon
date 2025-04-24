@@ -14,6 +14,12 @@ from backend.context_manager import (
     update_chat_context,
     get_contextual_results
 )
+import pandas as pd
+import contextlib
+import io
+import re
+import plotly.graph_objects as go
+from backend.link_crawler import extract_text_from_url
 
 # --------- CONFIG ---------
 st.set_page_config(
@@ -26,6 +32,11 @@ st.set_page_config(
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
+
+def extract_links(text):
+    # Basic regex to find URLs
+    url_pattern = r'https?://[^\s]+'
+    return re.findall(url_pattern, text)
 
 logo = Image.open("app/assets/mando.png")
 rocket_lottie = load_lottiefile("app/assets/animation.json")
@@ -80,7 +91,7 @@ def show_home():
 
 # --------- SIDEBAR ---------
 def show_sidebar():
-    st.sidebar.title(f"👋 Hey, {st.session_state.user_name}")
+    st.sidebar.title(f" Hey, {st.session_state.user_name}")
     
     if st.sidebar.button("➕ New Chat"):
         new_id = f"chat_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}"
@@ -193,23 +204,97 @@ def show_qa_page():
                 st.session_state.chat_history
             )
         
+        def get_df_sample_with_columns(df, filename, max_rows=5):
+            sample = df.head(max_rows).to_markdown(index=False)  # For a readable format
+            return f"Sample from '{filename}':\n{sample}\n"
+        named_dfs = {}  # key: df name (e.g., df1), value: (df, filename)
+        df_samples_text = "" 
         if uploaded_files:
             with st.spinner("Processing documents..."):
+                structured_dfs = []  # Store structured DataFrames
                 for file in uploaded_files:
                     ext = file.name.split('.')[-1].lower()
                     try:
-                        if ext in ["png","jpg","jpeg"]:
+                        if ext in ["png", "jpg", "jpeg"]:
                             text = ocr_image(file)
-                        else:
+                            links = extract_links(text)
+                            for link in links:
+                                link_content = extract_text_from_url(link)
+                                if link_content.strip():
+                                    link_chunks = [(link_content[i:i+500], f"Link: {link}") for i in range(0, len(link_content), 500)]
+                                    new_text_chunks.extend(link_chunks)
+                                    new_sources.append(link)
+                            chunks = [(text[i:i+500], file.name) for i in range(0, len(text), 500)]
+                            new_text_chunks.extend(chunks)
+                            new_sources.append(file.name)
+
+                        elif ext in ["pdf", "txt"]:
                             text = parse_file(file, ext)
+                            links = extract_links(text)
+                            for link in links:
+                                link_content = extract_text_from_url(link)
+                                if link_content.strip():
+                                    link_chunks = [(link_content[i:i+500], f"Link: {link}") for i in range(0, len(link_content), 500)]
+                                    new_text_chunks.extend(link_chunks)
+                                    new_sources.append(link)
+                            chunks = [(text[i:i+500], file.name) for i in range(0, len(text), 500)]
+                            new_text_chunks.extend(chunks)
+                            new_sources.append(file.name)
+
+                        elif ext in ["csv", "xlsx", "json"]:
+                            df = load_structured_file(file, ext)
+                            if isinstance(df, pd.DataFrame):
+                                structured_dfs.append((df, file.name))
+                            else:
+                                st.error(f"Failed to load {file.name}: {df}")
+
+                        elif ext == "pptx":
+                            result = parse_file(file,ext)  # returns dict with "text" and "images"
+                            if isinstance(result, dict):
+                                # Process text
+                                text = result["text"]
+                                links = extract_links(text)
+                                for link in links:
+                                    link_content = extract_text_from_url(link)
+                                    if link_content.strip():
+                                        link_chunks = [(link_content[i:i+500], f"Link: {link}") for i in range(0, len(link_content), 500)]
+                                        new_text_chunks.extend(link_chunks)
+                                        new_sources.append(link)
+                                chunks = [(text[i:i+500], file.name) for i in range(0, len(text), 500)]
+                                new_text_chunks.extend(chunks)
+
+                                # Optionally OCR each extracted image
+                                for image_path in result["images"]:
+                                    image_text = ocr_image(image_path)
+                                    img_chunks = [(image_text[i:i+500], f"{file.name} (image)") for i in range(0, len(image_text), 500)]
+                                    new_text_chunks.extend(img_chunks)
+
+                                new_sources.append(file.name)
+                            else:
+                                st.error(f"Failed to process {file.name}: {result}")
+                    except Exception as e:
+                        st.error(f"Error processing {file.name}: {e}")
+
+
                     except Exception as e:
                         st.error(f"Error processing {file.name}: {str(e)}")
                         continue
-                    
-                    chunks = [(text[i:i+500], file.name) for i in range(0, len(text), 500)]
-                    new_text_chunks.extend(chunks)
-                    new_sources.append(file.name)
-                
+
+                named_dfs = {}  # key: df name (e.g., df1), value: (df, filename)
+                df_samples_text = ""
+
+                if structured_dfs:
+                    for i, (df, filename) in enumerate(structured_dfs):
+                        df_name = f"df{i+1}"
+                        named_dfs[df_name] = (df, filename)
+
+                        # Create sample preview
+                        sample = df.head(5).to_markdown()
+                        columns = list(df.columns)
+                        df_samples_text += f"Dataset `{df_name}` from file '{filename}':\nColumns: {columns}\nSample rows:\n{sample}\n\n"
+
+
+
                 if new_text_chunks:
                     st.session_state.chat_history = update_chat_context(
                         st.session_state.current_chat_id,
@@ -218,24 +303,62 @@ def show_qa_page():
                         st.session_state.chat_history
                     )
                     add_to_index(new_text_chunks)
+     
 
-        # Get relevant context and generate answer
         context_results = get_contextual_results(
             st.session_state.current_chat_id,
             question,
             st.session_state.chat_history
         )
+
+        combined_text_chunks = [(df_samples_text, "structured_dfs_summary")] + context_results
         
+
         with st.spinner("Analyzing your question..."):
             try:
-                answer = answer_question(question, context_results)
+                answer = answer_question(question, combined_text_chunks, named_dfs=named_dfs)
+
+                code_blocks = re.findall(r"```(?:python)?\s*([\s\S]*?)```", answer)
+
+                for code in code_blocks:
+                    local_vars = {}
+                    exec_globals = globals().copy()
+
+                    # Inject dataframes
+                    for df_name, (df, filename) in named_dfs.items():
+                        exec_globals[df_name] = df
+
+                    # ✅ Replace print() with st.write() before running the whole block
+                    code = code.replace("print(", "st.write(")
+
+                    code = code.replace("fig.show()", "")
+
+                    buffer = io.StringIO()
+                    with contextlib.redirect_stdout(buffer):
+                        try:
+                            exec(code, exec_globals, local_vars)
+                        except Exception as e:
+                            st.error(f"Error in code execution: {e}")
+
+                    # Show any figures
+                    for idx, var in enumerate(local_vars.values()):
+                        if isinstance(var, go.Figure):
+                            st.plotly_chart(var, use_container_width=True, key=f"plot_{idx}")
+
+                # ✅ Show final answer (without code block, clean if needed)
+                cleaned_answer = re.sub(r"```(?:python)?\s*([\s\S]*?)```", "", answer).strip()
+                if cleaned_answer:
+                    st.markdown(cleaned_answer)
+
             except Exception as e:
-                answer = f"Sorry, I encountered an error: {str(e)}"
+                st.error(f"Sorry, I encountered an error: {str(e)}")
+
+
 
         # Update chat history
         current_chat.setdefault("messages", []).extend([
             {"role": "user", "content": question, "sources": new_sources},
-            {"role": "assistant", "content": answer, "sources": new_sources}
+            {"role": "assistant", "content": cleaned_answer, "sources": new_sources}
         ])
         
         save_user_data(
@@ -243,7 +366,9 @@ def show_qa_page():
             st.session_state.user_name,
             st.session_state.chat_history
         )
-        st.rerun()
+        if st.button("Ask another question"):
+            st.rerun()
+
 
 if "page" not in st.session_state:
     st.session_state.page = "home"

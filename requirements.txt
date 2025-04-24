@@ -7,7 +7,7 @@ PyMuPDF>=1.23.5           # PDF
 python-docx>=0.8.11       # DOCX
 python-pptx>=0.6.21       # PPTX
 openpyxl>=3.1.2           # XLSX
-pandas>=2.1.4             # CSV, XLSX
+pandas==1.25.0             # CSV, XLSX
 chardet>=5.2.0            # Encoding detection for TXT/CSV
 
 # OCR
@@ -20,7 +20,7 @@ beautifulsoup4>=4.12.2
 
 # Semantic search
 sentence-transformers>=2.2.2
-faiss-cpu>=1.7.4           # or use faiss-gpu if you plan on GPU
+faiss-cpu>=1.7.4           
 
 # OpenAI / LLM integration
 openai>=1.14.2             # Optional: GPT-3.5/4
@@ -33,3 +33,5 @@ python-dotenv>=1.0.1       # Load API keys from .env file
 streamlit-lottie>=0.0.5
 Pillow>=10.0.0
 google-generativeai==0.8.4
+pandasai
+plotly
