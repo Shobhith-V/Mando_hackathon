@@ -1,0 +1,685 @@
+{
+  "version": "1.2",
+  "name": "Shobhith",
+  "email": "shobhith.v@gmail.com",
+  "chat_history": {
+    "chat_20250423190134": {
+      "title": "what were the total marks that the student got in ...",
+      "messages": [
+        {
+          "role": "user",
+          "content": "what were the total marks that the student got in science",
+          "sources": [
+            "srija class 10.pdf"
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": "098",
+          "sources": [
+            "srija class 10.pdf"
+          ]
+        },
+        {
+          "role": "user",
+          "content": "what about mathematics",
+          "sources": []
+        },
+        {
+          "role": "assistant",
+          "content": "I cannot answer that based on the provided context. The context only mentions the \"Central Board of Secondary Education\" and some unclear text, but provides no specific information about mathematics.",
+          "sources": []
+        },
+        {
+          "role": "user",
+          "content": "what time do all the flights mentioned take off",
+          "sources": [
+            "flight.pdf"
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": "Here are the departure times for the flights mentioned:\n\n*   British Airways (BA) 35 from Chennai (MAA) to London (LHR) departs at **2:10 AM**.\n*   British Airways (BA) 711 from London (LHR) to Zurich (ZRH) departs at **10:15 AM**.\n*   British Airways (BA) 716 from Zurich (ZRH) to London (LHR) departs at **3:20 PM**.\n*   British Airways (BA) 36 from London (LHR) to Chennai (MAA) departs at **5:35 PM**.",
+          "sources": [
+            "flight.pdf"
+          ]
+        },
+        {
+          "role": "user",
+          "content": "can you tell me when and where the person mentioned in this doc was born",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Anurag_Kashyap",
+            "anurag.pdf"
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": "Anurag Singh Kashyap was born on 10 September 1972 in Gorakhpur, Uttar Pradesh, India.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Anurag_Kashyap",
+            "anurag.pdf"
+          ]
+        }
+      ],
+      "context": {
+        "text_chunks": [
+          [
+            "\nPage 1 Image 1 OCR:\n\n\nPage 1 Image 2 OCR:\nata aeate Brant ats\n\n\nPage 1 Image 3 OCR:\nCentral Board of Secondary Education\n",
+            "srija class 10.pdf"
+          ],
+          [
+            "Page 1 Text:\nMy Trip\nMON, OCT 21, 2024 - Chennai (MAA) to London (LHR) - Confirmed \ue607\nPASSENGERS\nDEBBAD, PRANAV MR\nVADLAMUDI, LALANTH SHOBHITH MR\nSURESH, KALPANA MS\nMUTHUSAMY, KRISHNA MR\nMON, OCT 21, 2024 - London (LHR) to Zurich (ZRH) - Confirmed \ue607\nPASSENGERS\nDEBBAD, PRANAV MR\nVADLAMUDI, LALANTH SHOBHITH MR\nSURESH, KALPANA MS\nMUTHUSAMY, KRISHNA MR\nWED, OCT 30, 2024 - Zurich (ZRH) to London (LHR) - Confirmed \ue607\nPASSENGERS\nDEBBAD, PRANAV MR\nVADLAMUDI, LALANTH SHOBHITH MR\nSURESH, KALPANA MS\nMUTHUSAM",
+            "flight.pdf"
+          ],
+          [
+            "Y, KRISHNA MR\nWED, OCT 30, 2024 - THU, OCT 31, 2024 - London (LHR) to Chennai (MAA) - Confirmed \ue607\n \nBritish Airways (BA) 36\nConfirmation Number: 5OY9OV\n\ue600\nDEPART \n5:35 \nNON\nSTOP\n\ue61f\n10H 55M\nARRIVE \n12:00 \nAM \nMAA\nPM \nLHR\nClass Of Service: Economy\nAIRPORT INFO\nChennai Arpt (MAA) \nChennai, IN\nTerminal 2\nto\nHeathrow (LHR) \nLondon, GB\nTerminal 5\nFLIGHT INFO\nBoeing 787-8\nMeal\nBritish Airways (BA) 716\nConfirmation Number: 5OY9OV\n\ue600\nDEPART \n3:20 \nNON\nSTOP\n\ue61f\n1H 45M\nARRIVE \n6:05 \nPM \nLHR\nPM \nZRH\nClass Of Ser",
+            "flight.pdf"
+          ],
+          [
+            "vice: Economy\nAIRPORT INFO\nHeathrow (LHR) \nLondon, GB\nTerminal 5\nto\nZurich Arpt (ZRH) \nZurich, CH\nFLIGHT INFO\nAirbus A320-212\nMeal at cost\nBritish Airways (BA) 711\nConfirmation Number: 5OY9OV\n\ue600\nDEPART \n10:15 \nNON\nSTOP\n\ue61f\n2H 0M\nARRIVE \n11:15 \nAM \nZRH\nAM \nLHR\nClass Of Service: Economy\nAIRPORT INFO\nZurich Arpt (ZRH) \nZurich, CH\nto\nHeathrow (LHR) \nLondon, GB\nTerminal 5\nFLIGHT INFO\nAirbus A319\nMeal at cost\n\n\nPage 1 Image 1 OCR:\n\nPage 2 Text:\nPASSENGERS\nDEBBAD, PRANAV MR\nVADLAMUDI, LALANTH SHOBHITH MR\n",
+            "flight.pdf"
+          ],
+          [
+            "SURESH, KALPANA MS\nMUTHUSAMY, KRISHNA MR\nHelp\nYour Reservation Code: 900S8M\nBALMER LAWRIE AND CO LTD\nNbcc Centre 1st Floor Plot No 2 Okhla\nDelhi, 110020 \nIndia \n\u00a92024 Travelport.\nBritish Airways (BA) 35\nConfirmation Number: 5OY9OV\n\ue600\nDEPART \n2:10 \nNON\nSTOP\n\ue61f\n9H 55M\nARRIVE \n5:35 \nPM \nLHR\n+1\nAM \nMAA\nClass Of Service: Economy\nAIRPORT INFO\nHeathrow (LHR) \nLondon, GB\nTerminal 5\nto\nChennai Arpt (MAA) \nChennai, IN\nTerminal 2\nFLIGHT INFO\nBoeing 787-8\nMeal\n\n\nPage 2 Image 1 OCR:\n",
+            "flight.pdf"
+          ],
+          [
+            "Anurag Kashyap - Wikipedia\nJump to content\nMain menu\nMain menu\nmove to sidebar\nhide\nNavigation\nMain page\nContents\nCurrent events\nRandom article\nAbout Wikipedia\nContact us\nContribute\nHelp\nLearn to edit\nCommunity portal\nRecent changes\nUpload file\nSpecial pages\nSearch\nSearch\nAppearance\nDonate\nCreate account\nLog in\nPersonal tools\nDonate\nCreate account\nLog in\nPages for logged out editors\nlearn more\nContributions\nTalk\nContents\nmove to sidebar\nhide\n(Top)\n1\nEarly life\n2\nCareer\nToggle Career subsection\n2",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            ".1\nWriter and director\n2.1.1\n1990\u20131999\n2.1.2\n2000\u20132009\n2.1.3\n2010s\n2.1.4\n2020s\n2.2\nProducer\n2.3\nActor\n3\nPersonal life\n4\nStyle, themes and influences\n5\nAwards and honours\n6\nFilmography\n7\nReferences\n8\nExternal links\nToggle the table of contents\nAnurag Kashyap\n23 languages\n\u0627\u0644\u0639\u0631\u0628\u064a\u0629\n\u09ac\u09be\u0982\u09b2\u09be\nCatal\u00e0\nDeutsch\nEspa\u00f1ol\n\u0641\u0627\u0631\u0633\u06cc\nFran\u00e7ais\n\u0939\u093f\u0928\u094d\u0926\u0940\nBahasa Indonesia\nItaliano\n\u092e\u0948\u0925\u093f\u0932\u0940\n\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02\n\u092e\u0930\u093e\u0920\u0940\n\u0645\u0635\u0631\u0649\nBahasa Melayu\n\u0b13\u0b21\u0b3c\u0b3f\u0b06\n\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40\n\u067e\u0646\u062c\u0627\u0628\u06cc\nPolski\n\u1c65\u1c5f\u1c71\u1c5b\u1c5f\u1c72\u1c64\n\u0ba4\u0bae\u0bbf\u0bb4\u0bcd\n\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41\n\u0627\u0631\u062f\u0648\nEdit links\nArticle\nTalk\nEnglish\nRead\nEdit\nView histo",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ry\nTools\nTools\nmove to sidebar\nhide\nActions\nRead\nEdit\nView history\nGeneral\nWhat links here\nRelated changes\nUpload file\nPermanent link\nPage information\nCite this page\nGet shortened URL\nDownload QR code\nPrint/export\nDownload as PDF\nPrintable version\nIn other projects\nWikimedia Commons\nWikidata item\nAppearance\nmove to sidebar\nhide\nFrom Wikipedia, the free encyclopedia\nIndian film director and screenwriter (born 1970)\nFor the contestant, see\nAnurag Kashyap (contestant)\n.\nAnurag Kashyap\nAnurag at\nIFF",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "K 2022\nBorn\nAnurag Singh Kashyap\n(\n1972-09-10\n)\n10 September 1972\n(age\u00a052)\n[\n1\n]\nGorakhpur\n,\nUttar Pradesh\n, India\nAlma\u00a0mater\nHansraj College\nOccupations\nFilm director\nfilm producer\nscreenwriter\nactor\nYears\u00a0active\n1997\u2013present\nWorks\nFull list\nSpouses\nAarti Bajaj\n\u200b\n\u200b\n(\nm.\n1997;\ndiv.\n2009)\n\u200b\nKalki Koechlin\n\u200b\n\u200b\n(\nm.\n2011;\ndiv.\n2015)\n\u200b\nChildren\n1\n[\n2\n]\n[\n3\n]\nRelatives\nAbhinav Kashyap\n(brother)\nAnubhuti Kashyap (sister)\nAwards\nOrder of Arts and Letters\nYash Bharti Award\nAnurag Kashyap\n(born 10 Septem",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ber 1972) is an Indian filmmaker and actor known for his works in\nHindi cinema\nand\nTamil\nfilms. He is the recipient of four\nFilmfare Awards\n. For his contributions to films, the\nGovernment of France\nmade him a Knight of the\nOrder of Arts and Letters\nin 2013.\nAfter writing a television serial, Kashyap got his major break as a co-writer in\nRam Gopal Varma\n's crime drama\nSatya\n(1998) and made his directorial debut with\nPaanch\n, which never had a theatrical release due to censorship issues. He then ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "went on to direct\nBlack Friday\n(2004), a film based on the\nnamesake book\nby\nHussain Zaidi\nabout the\n1993 Bombay bombings\n. Its release was held up for two years by the\nDistrict Board of Film Certification\nbecause of the pending verdict of the case at that time but was released in 2007 to widespread critical appreciation. Kashyap's follow-up,\nNo Smoking\n(2007) met with negative reviews and performed poorly at the box-office. His next venture\nDev.D\n(2009), a modern adaptation of\nDevdas\nreceived po",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "sitive reviews and was a commercial success; followed by the socio-political drama\nGulaal\n(2009), and the thriller\nThat Girl in Yellow  Boots\n(2011).\nKashyap's prominence increased with the two-part\ncrime drama\n,\nGangs of Wasseypur\n(2012). Kashyap subsequently co-produced the critically acclaimed drama\nThe Lunchbox\n(2013), and the biographical drama\nShahid\n(2012), the former earned him a\nBAFTA Award for Best Film Not in the English Language\nnomination. His next films were the anthology\nBombay Ta",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "lkies\n(2013), and the drama\nUgly\n(2014). In 2016, Kashyap directed\nRaman Raghav 2.0\n, a film inspired by the serial killer\nRaman Raghav\n. His next film was the sports drama\nMukkabaaz\n, which was released in 2018. The same year, he co-directed India's first\nNetflix Original series\n, the crime thriller\nSacred Games\n, based on\nVikram Chandra\n's\nnovel of the same name\nand the romantic drama\nManmarziyaan\n. He is also the co-founder of a film production company, Good Bad Films.\nEarly life\n[\nedit\n]\nKas",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "hyap was born on 10 September 1972 to a Hindu family in\nGorakhpur, Uttar Pradesh\n.\n[\n4\n]\n[\n5\n]\n[\n6\n]\nHis father Sri Prakash Singh is a retired Chief Engineer of the\nUttar Pradesh Rajya Vidyut Utpadan Nigam Limited\nand was posted in\nObra Thermal Power Station\nin\nSonbhadra district\nnear\nVaranasi\n.\n[\n7\n]\nHe did his primary schooling from Hillgrange Prepratory School in Dehradun, and grade seven onwards, from the\nScindia School\nin\nGwalior\n.\nSome of the locations used in\nGangs of Wasseypur\nare also i",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "nfluenced from his own old house where he himself lived with his parents, sister, Anubhuti Kashyap, and brother,\nAbhinav Kashyap\n.\n[\n8\n]\n[\n9\n]\nAbhinav is also a filmmaker, who made his directorial debut with the\nmasala\nblockbuster,\nDabangg\n(2010). Anubhuti has been his assistant in most of his films.\n[\n10\n]\nShe made her directorial debut with\nDoctor G\n(2022), a medical campus comedy, starring\nAyushmann Khurrana\n,\nRakul Preet Singh\n,\nShefali Shah\nand\nSheeba Chaddha\n.\nOwing to his desire to become",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " a scientist, Kashyap went to\nDelhi\nfor his higher studies and enrolled himself into a zoology course at the\nHansraj College\n(\nUniversity of Delhi\n); he graduated in 1993.\n[\n11\n]\n[\n12\n]\n[\n13\n]\nHe then eventually joined the street theatre group,\nJana Natya Manch\n; and did many street plays.\n[\n9\n]\n[\n13\n]\n[\n14\n]\nThe same year, couple of his friends \"urged [him] to catch a\nde Sica\nretrospective\" at the\nInternational Film Festival of India\n.\n[\n8\n]\n[\n9\n]\n[\n15\n]\nIn ten days, he saw 55 films at the fest",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ival, and\nVittorio De Sica\n's\nBicycle Thieves\nwas the film that influenced him the most.\n[\n13\n]\n[\n16\n]\nCareer\n[\nedit\n]\n\"As a 19-year-old student of\nzoology\nat Delhi's\nHansraj College\n, I had no desire to be a filmmaker. Till I watched\nBicycle Thieves\n, a 1948 Italian film directed by\nVittorio De Sica\n, at a film festival in Delhi in 1993. After the film got over, I decided to chuck it all and leave bag-and-baggage for Bombay to be a filmmaker.\"\n\u2014Kashyap on how one film changed his life.\n[\n11\n]\nA",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "fter the de Sica experience, Kashyap arrived in\nMumbai\nin 1993 with\nINR\n5,000 in his pocket.\n[\n14\n]\n[\n17\n]\nSoon the money ran out, and he spent months on the streets, staying in lofts, \"sleeping on beaches,\" \"under a water tank and in the\nSt Xavier's [college] boys hostel\n.\"\n[\n9\n]\nHe then managed to find work at\nPrithvi Theatre\n, but his first play remained incomplete because the director died.\n[\n12\n]\nWriter and director\n[\nedit\n]\n1990\u20131999\n[\nedit\n]\nIn 1995, an acquaintance introduced Kashyap to\n",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "Shivam Nair\n. The day they met, Kashyap watched\nTaxi Driver\n(1976) at Nair's place, and the film inspired him to \"write something\". The team of\nSriram Raghavan\n, Sridhar Raghavan and Shiv Subramaniam were working on two projects, one of which was a short TV series,\nAuto Narayan\n, based on the life of\nserial killer\nAuto Shankar\n; the second one was a film scripted by Kashyap.\n[\n13\n]\nAuto Narayan\ngot delayed because the script written by Subramaniam was not \"working\". Kashyap rewrote the script an",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "d got credit for the same, but it was scrapped.\n[\n14\n]\n[\n16\n]\nIn 1997, he wrote the screenplay of\nHansal Mehta\n's first film,\nJayate\nwhich failed to find a theatrical release;\n[\n18\n]\nand episodes of the TV series\nKabhie Kabhie\n(1997).\n[\n19\n]\nIn 1998, actor\nManoj Bajpayee\nsuggested his name to\nRam Gopal Varma\nto write a film.\n[\n20\n]\nVarma liked Kashyap's\nAuto Narayan\nand hired him, alongside\nSaurabh Shukla\nto write the script for his crime film,\nSatya\n(1998).\n[\n12\n]\n[\n14\n]\nSatya\nwas a critical an",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "d commercial success,\n[\n21\n]\n[\n22\n]\nand is regarded as one of the best films of Indian cinema.\n[\n23\n]\n[\n24\n]\nHe later collaborated with Varma in scripting\nKaun\n(1999) and writing dialogues for\nShool\n(1999). In 1999, he made a short film, titled\nLast Train to Mahakali\nfor television.\n[\n25\n]\n2000\u20132009\n[\nedit\n]\nWhile working with Nair, Kashyap came across files related to the\nJoshi-Abhyankar serial murders\nthat took place in\nPune\nin 1976, which became the inspiration for his directorial debut\nPaanc",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "h\n.\n[\n26\n]\n[\n27\n]\nA\ncrime thriller\nabout a group of five friends of a rock band who turn into criminals.\n[\n28\n]\nThe film faced trouble with the\nCentral Board of Film Certification\n[\n29\n]\nbecause the board felt that it dealt unapologetically with sex, drugs and celebrated violence.\n[\n30\n]\nIt was cleared by the Board in 2001,\n[\n31\n]\nbut remains unreleased due to some problems faced by the producer.\n[\n16\n]\nIn these years, he also wrote dialogues for many films including\nPaisa Vasool\n(2004),\nMani Ra",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "tnam\n's\nYuva\n(2004), the Canadian film\nWater\n(2005),\nMain Aisa Hi Hoon\n(2005) and\nMixed Doubles\n(2006).\nAfter a failed attempt to make\nAllwyn Kalicharan\nin 2003,\n[\n32\n]\nKashyap started working on\nBlack Friday\n, a film based on the\nnamesake book\nby\nHussain Zaidi\nabout the\n1993 Bombay bombings\n.\n[\n33\n]\n[\n34\n]\nThe Bombay high court put a stay on the release of the film, until the judgement in the bomb blasts case was delivered. It was decided after a petition filed by a group of 1993 bomb blasts ac",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "cused, challenging the release of the film based on their case.\n[\n35\n]\nThe film got censorship clearance in 2007, and was released after two years meeting universal acclaim.\n[\n36\n]\n[\n37\n]\nNikhat Kazmi\ngave the film a three star out of five rating and mentioned: \"It was indeed a difficult film to make, yet the director has managed to grapple with all the loose threads and put them together in a composite whole. So much so, the film moves like a taut thriller, without ideology coloring the sepia f",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "rames.\"\n[\n38\n]\nKashyap attending the\nRome Film Festival\nin 2007\nThe same year, Kashyap adapted\nStephen King\n's short story \"\nQuitters, Inc.\n\" into\nNo Smoking\n. A\nsurrealistic\nthriller about a\nchain-smoker\nwho gets trapped in the maze of a person who guarantees will make him quit smoking.\n[\n39\n]\nThe film starring\nJohn Abraham\n,\nAyesha Takia\n,\nRanvir Shorey\nand\nParesh Rawal\nin the leads with music by\nVishal Bhardwaj\n, premiered at the\nRome Film Festival\n.\n[\n40\n]\nNo Smoking\nreceived an overwhelming",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " negative reception and failed at the box-office.\n[\n41\n]\n[\n42\n]\nCNN-IBN's\nRajeev Masand\ncalled it a \"colossal disappointment\".\n[\n43\n]\nHis final release of the year was\nReturn of Hanuman\n, an animation film about adventures of the Hindu god\nHanuman\n.\n[\n44\n]\nIn 2009, Kashyap had two releases.\nDev.D\n, a contemporary takes on\nSarat Chandra Chattopadhyay\n's novel\nDevdas\n. It was the twelfth film adaptation of the Bengali novel.\n[\n45\n]\nStarring\nAbhay Deol\nwho actually pitched the original idea of the ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "film to Kashyap, with\nMahie Gill\nand newcomer\nKalki Koechlin\nportraying the characters of \"Paro\" and\nChandramukhi\nrespectively.\n[\n46\n]\nThe film met with generally positive reviews and strong box office results.\n[\n47\n]\n[\n48\n]\n[\n49\n]\nGulaal\n, a political drama, was his final release of that year. Kashyap started working on the film in 2005 and had finished 70\u201380 per cent of the film in 2006, when its producer fell ill. Later on, Zee Motion Pictures took over the project and was finally finished in",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " 2008 and released on 13 March 2009.\n[\n16\n]\n[\n50\n]\nAnupama Chopra\ngave the film three stars and referred to Kashyap as \"the Anti-\nYash Chopra\n\".\n[\n51\n]\nDespite positive reviews, the film underperformed at the box office.\n[\n52\n]\n2010s\n[\nedit\n]\nMumbai Cutting\n(2010), an\nanthology film\n, was his next directorial venture. It consisted of eleven short films made by eleven directors.\n[\n53\n]\nHe directed one of the short films. It premiered at the 2008\nIndian Film Festival of Los Angeles\n.\n[\n54\n]\nKashya",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "p at a press meet for\nUdaan\n, 2010.\nIn 2011, Kashyap directed\nThat Girl in Yellow Boots\n, a thriller starring\nKalki Koechlin\nwho also co-wrote the film with him.\n[\n55\n]\nThe film was screened at many festivals including\n2010 Toronto International Film Festival\n,\n67th Venice International Film Festival\n,\nIndian Film Festival of Los Angeles\nand the\nLondon Indian Film Festival\n.\n[\n56\n]\n[\n57\n]\nShot in thirteen days, the film was released in September 2011.\n[\n58\n]\nRoger Ebert\ngave it 3.5 out of 4 star",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "s, praising the character-driven film and the portrayal of its lead alongside the city compared to most Hindi films: \" a film like this provides a radically different view of India than you can find in the pleasures and excesses of Bollywood\".\n[\n59\n]\nIn 2012, Kashyap came up with his ambitious directorial venture\nGangs of Wasseypur\n, which screened at the 2012\nCannes\nDirectors' Fortnight\n,\n[\n60\n]\nLondon Indian Film Festival\n,\n[\n61\n]\nToronto film festival\n[\n62\n]\nand the\nSundance Film Festival\nin ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "2013.\n[\n63\n]\nThe film with an ensemble cast, was a two-part crime saga centered on the\ncoal mafia of Dhanbad\nwith the story spanning from the early 1940s to 2009. The first part was released on 22 June, and the second on 8 August 2012, both receiving appreciation from Indian and international critics alike.\n[\n64\n]\n[\n65\n]\n[\n66\n]\n[\n67\n]\nThe combined budget of the two films allowed it to be a box-office success.\n[\n68\n]\n[\n69\n]\nIn 2013, Kashyap directed\nThat Day After Everyday\n, a 20-minute short fil",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "m that was released on\nYouTube\n; starring\nRadhika Apte\n,\nGeetanjali Thapa\nand\nSandhya Mridul\n. It showed the story of three working women facing troubles every day, both inside and outside their houses and how they overcome them. Dealing with issues like\neve teasing\nand public molestation, the video got four lakh hits in two days.\n[\n70\n]\nSpeaking about the purpose of the project, Kashyap showed his intention to make people feel angry without offering a solution.\n[\n71\n]\nThe same year he teamed up",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " with\nDibakar Banerjee\n,\nZoya Akhtar\nand\nKaran Johar\nto direct \"Murabba\", one of the four segments of anthology film\nBombay Talkies\n. It was made to celebrate the 100 years of Indian cinema,\n[\n72\n]\n[\n73\n]\nand was screened at the\n2013 Cannes Film Festival\n.\n[\n74\n]\nThe film did not perform well at the box office,\n[\n75\n]\nbut was well received by critics.\n[\n76\n]\n[\n77\n]\nHis next film was\nUgly\n(2014), a thriller about the kidnapping of a struggling actor's daughter, and the events followed by it. It w",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "as screened in the\nDirectors' Fortnight\nsection at the\n2013 Cannes Film Festival\n, receiving a\nstanding ovation\n.\n[\n78\n]\nThe film's theatrical release was halted for over a year regarding censorship issues over depiction of smoking in it.\n[\n79\n]\n[\n80\n]\nThough it was released on 26 December 2014 to generally positive reviews.\n[\n81\n]\n[\n82\n]\nKashyap at the second trailer launch of\nBombay Velvet\n.\nKashyap's next release was\nBombay Velvet\n(2015), a\nperiod film\nset in Bombay in the 1960s, based on\nPri",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "nceton University\nHistorian\nGyan Prakash\n's book\nMumbai Fables\n. It stars\nRanbir Kapoor\n,\nAnushka Sharma\nand Karan Johar.\n[\n83\n]\nThe film was co-edited by the\nAcademy Award\nwinner editor\nThelma Schoonmaker\n, who is known for her collaboration with\nMartin Scorsese\n.\n[\n84\n]\nReleased on 15 May 2015, some critics appreciated its retro-look, performances, styling and music, but criticized its faltered storytelling.\n[\n85\n]\n[\n86\n]\nIt also emerged as a box-office failure.\n[\n87\n]\n[\n88\n]\nBombay Velvet\nwas",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " Kashyap's dream project and its failure was a huge disappointment to him. In an interview with critic\nRajeev Masand\n, Kashyap stated that at one point he wanted to leave India because he felt that people here did not understand his films but then realized that he did not manage the budget of the film.\n[\n89\n]\nIn 2016, Kashyap co-wrote and directed\nRaman Raghav 2.0\n, a thriller inspired by the notorious serial killer\nRaman Raghav\n. It starred\nNawazuddin Siddiqui\nas the title character along with\n",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "Vicky Kaushal\n. The film premiered at the 2016\nSydney Film Festival\nand the\n2016 Cannes Film Festival\n, in the Director's Fortnight section to a positive response.\n[\n90\n]\n[\n91\n]\nAfter working on\nRaman Raghav 2.0\n, Kashyap received a script from Vineet Kumar Singh of\nMukkabaaz\n. He did not like the initial script but was excited by a \"10-minute chunk\" that he had not come across before.\n[\n92\n]\nHe then rewrote the script with his team having the 10-minute as a base.\n[\n92\n]\nSingh trained himself fo",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "r six months for the film.\n[\n93\n]\nThe film was screened at\n2017 Toronto International Film Festival\n, the\nMumbai Film Festival\nand was released theatrically on 12 January 2018.\n[\n94\n]\nSaibal Chatterjee of\nNDTV\ncalled it \"one of the more important films to have come out of the Mumbai movie industry in recent times.\"\n[\n95\n]\nIn 2018, Kashyap again collaborated with Banerjee, Akhtar and Johar for the anthology film\nLust Stories\n. Based on the theme of lust, it had stories told from the female perspe",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ctive.\n[\n96\n]\nKashyap's story had\nRadhika Apte\nand Akash Thosar. The film was released on\nNetflix\non 15 June 2018.\n[\n97\n]\nIt was followed by India's first\nNetflix Original series\n, the crime thriller\nSacred Games\n, based on\nVikram Chandra\n's\nnovel of the same name\n.\n[\n98\n]\nKashyap co-directed the series with\nVikramaditya Motwane\n. The show received critical acclaim,\n[\n99\n]\n[\n100\n]\nwith Lincoln Michel of\nGQ\ncalling it the \"best Netflix original in years.\"\n[\n101\n]\nHis final directorial venture of ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "the year was\nManmarziyaan\n, a love triangle set in\nPunjab\n, starring\nAbhishek Bachchan\n,\nTapsee Pannu\nand Vicky Kaushal. Written by\nKanika Dhillon\n, the film was premiered at the\n2018 Toronto International Film Festival\nand was released in India on 16 September to positive reviews.\n[\n102\n]\n[\n103\n]\nIn December 2019, Kashyap launched the audio web-series titled\nThriller Factory\nwhich he directed for\nAmazon\n's Audible Suno application. It features voices of\nTabu\nand Nawazuddin Siddiqui.\n[\n104\n]\n202",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "0s\n[\nedit\n]\nThe next year, Kashyap reunited with his\nLust Stories\nteam to direct the horror anthology film\nGhost Stories\n. His story was about a pregnant woman going through anxiety. It was released on Netflix on 1 January 2020.\n[\n105\n]\nHe continued his association with Netflix and released his directorial venture\nChoked\n(2020) on the same. Starring\nSaiyami Kher\nand\nRoshan Mathew\n, the film tells the story of a bank cashier who finds a stash of cash hidden in her kitchen sink.\n[\n106\n]\nIn 2022, K",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ashyap directed the science fiction thriller\nDobaaraa\n. The film is an official remake of the 2018 Spanish film\nMirage\n; it opened at the\nLondon Indian Film Festival\nand was released theatrically on 19 August 2022.\n[\n107\n]\nDobaaraa\nmet with mostly positive reviews with Tanul Thakur of\nThe Wire\nwriting: \"A sharp adaptation, the film is deeper than it cares to admit and never slips into an instructional mode.\"\n[\n108\n]\nJust months after releasing\nDobaara\n, Kashyap released another directorial ventu",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "re titled\nAlmost Pyaar with DJ Mohabbat\n. The musical romantic drama starred\nAlaya F\nand debutant Karan Mehta. It had its world premiere at the 2022\nMarrakech International Film Festival\nand the film was released theatrically on 3 February 2023.\n[\n109\n]\nIn 2023, Kashyap wrote and directed the thriller film\nKennedy\n. He initially wanted to cast\nVikram\nand had named the film after Vikram's real name. However, they could not work together because of some miscommunication.\n[\n110\n]\nThe role eventuall",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "y went to\nRahul Bhat\n;\nSunny Leone\nalso appears in a pivotal role. The film had its world premiere at the\n2023 Cannes Film Festival\n.\n[\n111\n]\nProducer\n[\nedit\n]\nKashyap found his production company\nAnurag Kashyap Films\nin 2009, which is managed by\nGuneet Monga\n.\n[\n112\n]\n[\n113\n]\nThe companies' first film was the critical hit\nUdaan\n(2010), which was screened in the\nUn Certain Regard\ncategory at the\n2010 Cannes Film Festival\n.\n[\n114\n]\n[\n115\n]\nSince then, he has produced a number of projects includin",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "g\nShaitan\n(2011),\nChittagong\n(2012),\nAiyyaa\n(2012),\nLuv Shuv Tey Chicken Khurana\n(2012) and\nShorts\n(2013).\n[\n116\n]\nHe has also co-produced a number of films that have gone on to film festivals, but are yet to release theatrically, including\nMichael\n,\nPeddlers\nand\nMonsoon Shootout\n.\n[\n117\n]\nIn 2012, Kashyap produced\nThe Last Act\n, India's first collaborative feature film from twelve directors to make ten-minute short films, with each film being a part of a larger story written by him.\n[\n118\n]\nIn ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "2013, his company co-produced the critically acclaimed drama\nThe Lunchbox\n, which was nominated for the\nBAFTA Award for Best Film Not in the English Language\n; along with the biographical drama\nShahid\n.\n[\n119\n]\n[\n120\n]\nThe same year Kashyap, with\nViacom 18 Motion Pictures\nco-produced five short films with the theme of 'India is Visual Journey'.\n[\n121\n]\nThe short films were\nMoi Marjaani\n,\nChai\n,\nHidden Cricket\n,\nGeek Out\nand\nThe Epiphany\n.\n[\n122\n]\nHe also served as the\ncreative director\nin the\nAm",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "itabh Bachchan\nstarrer TV series\nYudh\n(2014),\n[\n123\n]\nand subsequently presented two\ndocumentary film\n's,\nThe World Before Her\n(2012) and\nKatiyabaaz\n(2014).\n[\n124\n]\n[\n125\n]\nIn 2011 Kashyap co-founded his director-driven production company\nPhantom Films\nwith partnership from\nVikas Bahl\n,\nVikramaditya Motwane\nand\nMadhu Mantena\n.\n[\n126\n]\nThe companies first film was the period romance\nLootera\n(2013), starring\nRanveer Singh\nand\nSonakshi Sinha\n. Based\nO. Henry\n's short story,\nThe Last Leaf\n, the film",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " was critically acclaimed.\n[\n127\n]\nKashyap at the success meet of\nImaikaa Nodigal\nin 2018.\nHe then went on to collaborate with Karan Johar's\nDharma Productions\nto produce the romantic comedy\nHasee Toh Phasee\n(2014). The film starring\nParineeti Chopra\nand\nSidharth Malhotra\nwas directed by the debutant\nVinil Mathew\n.\n[\n128\n]\nKashyap then co-edited and co-produced the comedy drama\nQueen\n, starring\nKangana Ranaut\n. The film was a critical and commercial success, it also won the\nNational Film Award f",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "or Best Feature Film in Hindi\n.\n[\n129\n]\n[\n130\n]\n[\n131\n]\nIn 2015, Kashyap co-produced Anushka Sharma's production debut\nNH10\n, and the sex comedy\nHunterrr\n. Both films proved to be successes.\n[\n132\n]\n[\n133\n]\nMasaan\n, was Phantom's fourth release of the year. The film won the\nFIPRESCI Award\nand the Promising Future award at the\n2015 Cannes Film Festival\n.\n[\n134\n]\nThe final release of Phantom of 2015 was\nShaandaar\n, which proved to be a box-office flop.\n[\n135\n]\nIn October the same year, Kashyap tea",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "med up with\nRidley Scott\nand\nRichie Mehta\nfor\nGoogle\n, as the executive producer for the documentary\nIndia in a Day\n.\n[\n136\n]\nThe project was for people across India to film a snapshot of their day and upload it on Google's official website.\n[\n137\n]\nThe following year, Kashyap collaborated again with Ekta Kapoor to produce\nUdta Punjab\n(2016), a crime drama by the director\nAbhishek Chaubey\nthat documents the\nsubstance abuse\nendemic in the Indian state of\nPunjab\n.\nUdta Punjab\ngenerated controversy",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " when the Central Board of Film Certification demanded extensive\ncensorship\nbefore its theatrical release, citing that the portrayal of Punjab in it was negative.\n[\n138\n]\nAfter Kashyap filed a lawsuit against the board, the\nMumbai High Court\ncleared the film for exhibition with a single scene cut.\n[\n139\n]\nHis company, Phantom Films, also produced a\nGujarati film\nWrong Side Raju\n, that same year.\n[\n140\n]\nKashyap co-produced\nHaraamkhor\n(2017), the survival drama\nTrapped\n(2016) and the superhero fi",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "lm\nBhavesh Joshi Superhero\n(2018).\nPhantom Films was dissolved in October 2018,\n[\n141\n]\nlargely in response to the sexual assault allegation on Vikas Bahl by a former Phantom employee, which was reported in 2015.\n[\n142\n]\nKashyap, and the other three founders issued statements on Twitter confirming the company's disbanding and moving on to independent projects.\n[\n143\n]\nIn 2020, Kashyap launched another production company titled Good Bad Films with partnership from Dhruv Jagasia and Akshay Thakker",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            ". Their maiden production was\nChoked.\n[\n144\n]\nActor\n[\nedit\n]\nKashyap has made cameo appearances in his films and those of others, including\nBlack Friday\n,\nNo Smoking (2007 film)\n,\nTera Kya Hoga Johnny\n(2008),\nLuck by Chance\n(2009),\nDev.D\n,\nGulaal\n,\nSoundtrack\n(2011),\nTrishna\n(2011),\nBhoothnath Returns\n(2014),\nHappy New Year\n(2014) and\nI Am\n(2010), playing a\nchild abuser\n.\n[\n145\n]\nThe same year, he played a police officer in the short film\nEncounter\n(2010), co-starring\nNimrat Kaur\n.\n[\n146\n]\nIn 20",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "11, he playing the full-fledged role of the antagonist Bunty Bhaiya in\nTigmanshu Dhulia\n's crime thriller\nShagird\n(2011).\n[\n147\n]\nIn 2016, Kashyap starred in\nAR Murugadoss\n's\nAkira\n, starring\nSonakshi Sinha\n; where he played the role of a corrupt police officer.\n[\n148\n]\nIn 2017, he acted in the short film titled\nChhuri\n, alongside\nTisca Chopra\nand Surveen Chawla.\n[\n149\n]\nHe also played the role of the antagonist in the Tamil-language thriller\nImaikkaa Nodigal\n(2018) directed by\nR. Ajay Gnanamuth",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "u\n.\n[\n150\n]\nIn 2020, Kashyap played an exaggerated version of himself in\nAK vs AK\ndirected by Vikramaditya Motwane, opposite\nAnil Kapoor\n.\n[\n151\n]\nHe also wrote the dialogues and served as one of the executive producers.\n[\n152\n]\nIn 2024, Kashyap played the role of villain Kazbe in\nDisney+ Hotstar\n's\nBad Cop (TV series)\n.\n[\n153\n]\nIn June 2024, Kashyap starred as Selvam in the Tamil movie\nMaharaja\nalongside\nVijay Sethupathi\n.\n[\n154\n]\nHe received widespread critical acclaim for essaying a layered n",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "egative role.\n[\n155\n]\nHis performance also garnered international attention with director\nAlejandro Gonzales Innaritu\noffering Kashyap a role in his upcoming project.\n[\n156\n]\nPersonal life\n[\nedit\n]\nKashyap, with his then-wife\nKalki Koechlin\nat the\n2009 Filmfare Awards\nKashyap was first married to film editor\nAarti Bajaj\n, with whom he has a daughter, Aaliyah Kashyap.\n[\n157\n]\nThey divorced in 2009.\n[\n158\n]\nHe later married actress\nKalki Koechlin\n, whom he first met during the making of\nDev D\n, at",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " her maternal home in\nOoty\n.\n[\n159\n]\n[\n160\n]\nIn 2013, Kashyap and Koechlin announced that: \"they are taking time apart from their more than two-year-old marriage.\"\n[\n161\n]\nIn May 2015, they were divorced at the\nBandra\nfamily court in Mumbai.\n[\n162\n]\nWhen asked about his religious views, Kashyap replied: \"I am an atheist. Cinema is the only religion I believe in.\"\n[\n163\n]\nOn 3 March 2021, the Income Tax Department raided 28 locations in Mumbai and Pune in connection with tax evasion by firm\nPhant",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "om Films\nconnected to Anurag Kashyap.\nIncome Tax Department\nsaid it found a discrepancy of around \u20b9300 crore which the Kashyap company official has not been able to explain.\n[\n164\n]\n[\n165\n]\nStyle, themes and influences\n[\nedit\n]\nKashyap is regarded as an\nauteur\nand is credited for pioneering India's indie scene in the early 2000s.\n[\n166\n]\n[\n167\n]\nWhile promoting\nBombay Talkies\nin\nAnupama Chopra\n's show,\nDibakar Banerjee\ndescribed Kashyap's\naesthetics\nas \"purely new age or purely Indian\"; projecti",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ng \"modern post independence India\" in his films.\n[\n168\n]\nHe prefers shooting on real locations by employing\nguerrilla-filmmaking\ntechniques with hidden cameras,\n[\n169\n]\nand often makes his actors improvise their dialogues on set.\n[\n170\n]\n[\n171\n]\nIn\nUgly\n, he did not show the script to any of the lead actors.\n[\n171\n]\n[\n172\n]\nHe frequently uses\nhand-held camera\nand experimental soundtracks.\n[\n173\n]\n[\n174\n]\nFilm maker Zoya Akhtar wrote: \"He has a very strong storytelling style and he proved that y",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ou could tell a great story with not a lot of money.\"\n[\n175\n]\nActor Ranbir Kapoor said, \"All his films may not be big money spinners but the impact Anurag has, his contribution to Indian cinema, is immense.\"\n[\n175\n]\nCanadian film critic and festival programmer\nCameron Bailey\nhas called Kashyap as \"one of the most knowledgeable filmmaker\".\n[\n176\n]\nThe protagonists of his films often deal with excessive drug, smoke or alcohol consumption, personal guilt, extreme rage and arrogance which leads them",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " into self-shattering situations.\n[\n177\n]\nOften portrays small but strong female characters.\n[\n178\n]\nMost of his films deal with realistic scenarios and take clues from real incidents.\n[\n179\n]\nLike the 1976\u201377\nJoshi-Abhyankar serial murders\nreference in\nPaanch\n,\n[\n27\n]\nthe\n1993 Mumbai bombing\nin\nBlack Friday\n,\n[\n12\n]\nthe\n1999 Delhi hit-and-run case\nand\nDPS MMS Scandal\nin\nDev.D\n[\n180\n]\nand the depiction of real life gang wars in\nGangs of Wasseypur\n.\n[\n181\n]\nUgly\ncame from his \"personal guilt\" of ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "not spending enough time with his daughter and the fear of losing her. With several real-life incidents like IAS officer whose wife filed a case of brutality against him.\n[\n157\n]\nA song \"Sylvia\" in\nBombay Velvet\nwas named after the\nNanavati case\n, where Sylvia Nanavati was K. M. Nanavati's wife.\n[\n182\n]\nKashyap's work inspired British director\nDanny Boyle\n, who has cited\nBlack Friday\nand\nSatya\nas the inspirations for his Academy Award-winning film\nSlumdog Millionaire\n(2008). Boyle stated that a ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "chase in one of the opening scenes of\nSlumdog Millionaire\nwas based on a \"12-minute police chase through the crowded\nDharavi\nslum\" in\nBlack Friday\n.\n[\n183\n]\nHe also described\nSatya\n's\n\"slick, often mesmerizing\" portrayal of the\nMumbai underworld\n, which included gritty and realistic \"brutality and urban violence,\" directly influenced the portrayal of the Mumbai underworld in\nSlumdog Millionaire\n.\n[\n183\n]\nAwards and honours\n[\nedit\n]\nKashyap (\nleft\n) along with\nSandrine Bonnaire\n,\nJoe Dante\n,\nAng ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "Lee\n,\nLiliana Cavani\n,\nSergei Bodrov\nand\nLuciano Ligabue\nat the\n2009 Venice Film Festival\nOn 20 May 2013, Kashyap was made a Knight of the\nOrder of Arts and Letters\nby the\nFrench government\nat\n2013 Cannes Film Festival\n, when India was the guest country of the festival to commemorate 100 years of Indian cinema.\n[\n184\n]\nHe has also served as one of the jury members at many film festivals including the\n2009 Venice Film Festival\n,\n[\n185\n]\n2013 Sundance Film Festival\n,\n[\n186\n]\n13th Marrakech Film Fe",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "stival\n,\n[\n187\n]\nand the\n20th Busan International Film Festival\n.\n[\n188\n]\nIn 2016, Kashyap was awarded with\nYash Bharti Award\nby the\nGovernment of Uttar Pradesh\nfor his contribution in the field of cinema.\n[\n189\n]\nIn 1999, Kashyap shared the\nScreen Award for Best Screenplay\n, along with\nSaurabh Shukla\nfor\nSatya\n.\n[\n190\n]\nThe next year, his short film\nLast Train to Mahakali\nwon the\nSpecial Jury Award\nat the same awards. His feature film debut\nBlack Friday\nwon the\nGrand Jury Prize\nat the 3rd Annua",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "l\nIndian Film Festival of Los Angeles\n,\n[\n191\n]\nand was a nominee for the Golden Leopard (Best Film) Award at the 57th\nLocarno International Film Festival\n.\n[\n192\n]\n[\n193\n]\nIn 2011, Kashyap shared the\nBest Story\nand\nBest Screenplay\nAward at the\n56th Filmfare Awards\nwith Vikramaditya Motwane for\nUdaan\n.\n[\n194\n]\nThe next year he shared the\nFilmfare Award for Best Dialogue\nwith\nZeishan Quadri\n, Sachin Ladia and Akhilesh Jaiswal for\nGangs of Wasseypur\nat the\n58th Filmfare Awards\n; the film also won ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "the\nCritics Award Best Movie\nat the same award show.\n[\n195\n]\nAt the\n60th Filmfare Awards\n, Kashyap won the\nFilmfare Award for Best Editing\nwith\nAbhijit Kokate\nfor\nQueen\n.\n[\n196\n]\nFilmography\n[\nedit\n]\nMain article:\nAnurag Kashyap filmography\nDirected features\nPaanch\n(2003)\nBlack Friday\n(2004)\nNo Smoking\n(2007)\nReturn of Hanuman\n(2007)\nDev.D\n(2009)\nGulaal\n(2009)\nThat Girl in Yellow Boots\n(2011)\nGangs of Wasseypur\n(2012)\nUgly\n(2014)\nBombay Velvet\n(2015)\nRaman Raghav 2.0\n(2016)\nMukkabaaz\n(2018)\nManm",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "arziyaan\n(2018)\nChoked\n(2020)\nDobaaraa\n(2022)\nAlmost Pyaar with DJ Mohabbat\n(2023)\nKennedy\n(2023)\nReferences\n[\nedit\n]\n^\n\"Anurag Kashyap\"\n.\nBritish Film Institute\n. Archived from\nthe original\non 7 November 2017\n. Retrieved\n30 October\n2017\n.\n^\nThe Indian Express (10 September 2021).\n\"Anurag Kashyap's deep bond with daughter Aaliyah Kashyap: 'Making me pose like a teenager'\n\"\n. Archived from\nthe original\non 16 June 2022\n. Retrieved\n16 June\n2022\n.\n^\n\"Bollywood shows up to Aaliyah Kashyap and Shane G",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "regoire's wedding reception: Sobhita Dhulipala and Naga Chaitanya make first appearance as newlyweds\"\n.\nThe Hindu\n. 12 December 2024. Archived from\nthe original\non 16 December 2024\n. Retrieved\n16 December\n2024\n.\n^\nSonar, Mamta (10 September 2017).\n\"Anurag Kashyap birthday special: The unlucky love life of the renowned filmmaker\"\n.\nThe Free Press Journal\n.\nArchived\nfrom the original on 7 November 2017\n. Retrieved\n30 October\n2017\n.\n^\n\"Anurag Kashyap turns 41; finds birthday wishes awkward\"\n.\nDaily",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " News and Analysis\n. 10 September 2013.\nArchived\nfrom the original on 24 October 2016\n. Retrieved\n10 July\n2016\n.\n^\nParul Khanna (5 July 2013).\n\"Anurag Kashyap, the Godfather\"\n.\nHindustan Times\n.\nArchived\nfrom the original on 7 March 2016\n. Retrieved\n7 July\n2013\n.\n^\n\"Clear light of day\"\n.\nTehelka\n. 27 November 2004. Archived from\nthe original\non 4 March 2016\n. Retrieved\n6 May\n2015\n.\n^\na\nb\n\"Moving beyond art\"\n.\nThe Telegraph\n. 25 January 2009. Archived from\nthe original\non 24 July 2009\n. Retrieved",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "\n23 June\n2009\n.\n^\na\nb\nc\nd\nShoma Chaudhury (7 October 2006).\n\"Catcher in the Rye\"\n.\nTehelka\n. Archived from\nthe original\non 16 July 2015\n. Retrieved\n23 June\n2010\n.\n^\nSuhani singh (31 May 2013).\n\"Sister Act\"\n.\nIndia Today\n.\nArchived\nfrom the original on 18 May 2015\n. Retrieved\n15 April\n2015\n.\n^\na\nb\nAkbar, Irena (14 June 2008).\n\"Why Sica Moved Patna\"\n.\nThe Indian Express\n.\nArchived\nfrom the original on 11 October 2020\n. Retrieved\n4 May\n2015\n.\n^\na\nb\nc\nd\n\"Black Friday is based on facts!\"\n.\nRediff.com",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "\n. 5 April 2005.\nArchived\nfrom the original on 3 June 2015\n. Retrieved\n4 May\n2015\n.\n^\na\nb\nc\nd\nSaakshi Juneja (3 January 2007).\n\"Interview Anurag Kashyap (Part 1)\u00a0: A Man with a Vision\"\n. sakhijuneja.com. Archived from\nthe original\non 12 November 2014\n. Retrieved\n4 May\n2015\n.\n^\na\nb\nc\nd\nThe 'Pahli Seedi' Anurag Kashyap Interview\nArchived\n20 March 2009 at the\nWayback Machine\n, excerpts from the interview (in Hindi) conducted by Pravesh Bhardwaj and Ajay Brahmatmaj\n^\n\"Anurag Kashyap's Biography\"\n. K",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "oimoi.\nArchived\nfrom the original on 18 May 2015\n. Retrieved\n7 May\n2015\n.\n^\na\nb\nc\nd\nAniruddha Guha (1 February 2009).\n\"Anurag Kashyap is jinxed no more\"\n.\nDaily News and Analysis\n.\nArchived\nfrom the original on 3 February 2009\n. Retrieved\n4 May\n2015\n.\n^\n\"Audacious, irreverent, yet refreshingly original\"\n.\nThe Financial Express\n. 10 September 2006.\nArchived\nfrom the original on 8 August 2014\n. Retrieved\n4 May\n2015\n.\n^\nThakur, Tanul (10 May 2014).\n\"Not all those who wander are lost: A filmmaker's ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "conviction is vindicated\"\n.\nThe Sunday Guardian\n.\nArchived\nfrom the original on 2 June 2015\n. Retrieved\n20 May\n2015\n.\n^\n\"B-Towners who made a splash on TV in 2014\"\n.\nThe Times of India\n. 19 December 2014.\nArchived\nfrom the original on 27 December 2014\n. Retrieved\n7 May\n2015\n.\n^\nGupta, Priya (14 August 2012).\n\"I don't see Ram Gopal Varma's films: Anurag Kashyap\"\n.\nThe Times of India\n.\nArchived\nfrom the original on 20 July 2015\n. Retrieved\n10 December\n2015\n.\n^\nKhalid Mohammed.\n\"Nothing but the tru",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "th\"\n.\nFilmfare\n. Archived from the original on 2 February 2009\n. Retrieved\n17 June\n2008\n.\n^\n\"Box Office 1998\"\n.\nBox Office India\n. Archived from\nthe original\non 17 October 2013\n. Retrieved\n4 May\n2015\n.\n^\nRachel Dwyer (30 May 2005).\n\"Behind The Scenes\"\n.\nOutlook\n.\nArchived\nfrom the original on 21 October 2010\n. Retrieved\n18 August\n2010\n.\n^\n\"100 Years of Indian Cinema: The 100 greatest Indian films of all time\"\n.\nCNN-IBN\n. 17 April 2013. Archived from the original on 25 April 2013\n. Retrieved\n12 F",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ebruary\n2014\n.\n^\nDipti Nagpaul D'souza (18 September 2011).\n\"The myth of Paanch is bigger than the film\"\n.\nThe Indian Express\n.\nArchived\nfrom the original on 5 March 2016\n. Retrieved\n1 June\n2015\n.\n^\n\"Total Knockout: A Censor Punch For Paanch\"\n.\nThe Times of India\n. 10 August 2001.\nArchived\nfrom the original on 27 January 2015\n. Retrieved\n4 November\n2014\n.\n^\na\nb\nSandeep Unnithan (22 October 2001).\n\"Total recall\"\n.\nIndia Today\n.\nArchived\nfrom the original on 5 May 2015\n. Retrieved\n4 May\n2015\n.\n^\n\"",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "Paanch: Holding up a mirror\"\n.\nHindutan Times\n. 29 July 2003. Archived from\nthe original\non 18 May 2015\n. Retrieved\n6 May\n2015\n.\n^\n\"I'll fight to the finish\"\n. Rediff. 13 October 2001.\nArchived\nfrom the original on 24 September 2015\n. Retrieved\n30 March\n2015\n.\n^\nJohn, Vimal Mohan; Viswamohan, Ayusha Iqbal (2017).\nBehind the Scenes: Contemporary Bollywood Directors and Their Cinema\n. SAGE Publications. p.\u00a0134.\nISBN\n978-93-86062-40-6\n.\nArchived\nfrom the original on 4 January 2018\n. Retrieved\n3 Jan",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "uary\n2018\n.\n^\nKapoor, Pankaj (3 December 2001).\n\"Censor clearance, for Paanch\"\n.\nThe Times of India\n.\nArchived\nfrom the original on 28 October 2017\n. Retrieved\n6 May\n2015\n.\n^\nShalini Dore (22 May 2013).\n\"Anurag Kashyap: He's India's Man at Cannes\"\n.\nVariety\n.\nArchived\nfrom the original on 6 September 2015\n. Retrieved\n6 May\n2015\n.\n^\nHiren Kotwani (23 February 2007).\n\"I just can't be politically correct: Anurag Kashyap\"\n.\nHindustan Times\n. Retrieved\n10 February\n2009\n.\n[\ndead link\n]\n^\n\"We conscious",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ly kept Sanjay Dutt out of Black Friday: Anurag Kashyap\"\n. Business of Cinema. 6 February 2007.\nArchived\nfrom the original on 21 May 2015\n. Retrieved\n6 May\n2015\n.\n^\n\"No Black Friday till blasts case verdict\"\n. Rediff. 31 March 2005.\nArchived\nfrom the original on 7 December 2008\n. Retrieved\n10 February\n2009\n.\n^\n\"Controversial Black Friday finally cleared for release in India\"\n.\nScreen International\n. 6 February 2007.\nArchived\nfrom the original on 11 May 2015\n. Retrieved\n6 May\n2015\n.\n^\nBlack Frida",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "y\nat\nRotten Tomatoes\n^\nKazmi, Nikhat\n(10 February 2007).\n\"Black Friday Movie Review\"\n.\nThe Times of India\n.\nArchived\nfrom the original on 14 June 2016\n. Retrieved\n13 October\n2015\n.\n^\nGajjar, Manish (10 October 2007).\n\"No Smoking\"\n. BBC.\nArchived\nfrom the original on 12 October 2007\n. Retrieved\n9 August\n2012\n.\n^\n\"No Smoking in Rome\"\n. Rediff. 25 October 2007.\nArchived\nfrom the original on 16 October 2012\n. Retrieved\n14 August\n2012\n.\n^\nKhalid Mohamed\n(26 October 2007).\n\"Review: No Smoking\"\n.\nHindu",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "stan Times\n. Archived from\nthe original\non 21 January 2012\n. Retrieved\n9 August\n2012\n.\n^\n\"No Smoking box-office report\"\n. Box Office India. Archived from\nthe original\non 18 May 2015\n. Retrieved\n4 May\n2015\n.\n^\n\"Review: No Smoking is a colossal disappointment\"\n.\nRajeev Masand\n.\nArchived\nfrom the original on 21 May 2015\n. Retrieved\n19 May\n2015\n.\n^\n\"Return of Hanuman (2007)\"\n.\nBollywood Hungama\n. 13 August 2011.\nArchived\nfrom the original on 8 December 2015\n. Retrieved\n14 April\n2015\n.\n^\nJason Buchan",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "an (2013).\n\"Dev.D Overview\"\n. Movies & TV Dept.\nThe New York Times\n. Archived from\nthe original\non 8 October 2013\n. Retrieved\n5 May\n2015\n.\n^\n\"Dev D is inspired by 'rich city brats'\n\"\n.\nMint\n. 5 February 2009.\nArchived\nfrom the original on 29 September 2015\n. Retrieved\n15 March\n2015\n.\n^\nSen, Raja\n(6 February 2009).\n\"Dev D review\"\n. Rediff.\nArchived\nfrom the original on 1 June 2016\n. Retrieved\n15 May\n2015\n.\n^\nSharma, Sanjukta (6 February 2009).\n\"Dev D | Style, substance (and length)\"\n.\nMint\n.\nArch",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ived\nfrom the original on 18 June 2009\n. Retrieved\n13 November\n2011\n.\n^\n\"Dev D strikes gold at box office\"\n.\nIndia Today\n. 10 February 2009.\nArchived\nfrom the original on 20 May 2015\n. Retrieved\n15 May\n2015\n.\n^\nRaja Sen (13 March 2009).\n\"Gulaal is a compelling watch\"\n. Rediff.\nArchived\nfrom the original on 15 April 2009\n. Retrieved\n2 December\n2009\n.\n^\nAnupama Chopra\n(13 March 2009).\n\"Gulaal movie review\"\n.\nNDTV\n.\nArchived\nfrom the original on 4 May 2015\n. Retrieved\n4 May\n2015\n.\n^\n\"Gulaal box-off",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ice report\"\n. Box Office India. Archived from\nthe original\non 18 May 2015\n. Retrieved\n4 May\n2015\n.\n^\n\"Ode to Mumbai\"\n.\nThe Hindu\n. 9 May 2008.\nArchived\nfrom the original on 11 October 2020\n. Retrieved\n19 May\n2015\n.\n^\n\"Fine directors get together in Mumbai Cutting\"\n. Rediff. 11 April 2008.\nArchived\nfrom the original on 18 May 2015\n. Retrieved\n5 May\n2015\n.\n^\n\"Yellow Boots is my last film with Kalki\"\n. Rediff. 2 September 2011.\nArchived\nfrom the original on 3 June 2015\n. Retrieved\n27 March\n2015\n.\n^",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "\n\"The Girl in Yellow Boots goes to US\"\n.\nThe Times of India\n. 8 August 2011.\nArchived\nfrom the original on 6 November 2012\n. Retrieved\n7 February\n2015\n.\n^\n\"The Girl in Yellow Boots my first worldwide release: Anurag Kashyap\"\n.\nThe Times of India\n. 9 August 2011.\nArchived\nfrom the original on 9 October 2017\n. Retrieved\n5 May\n2015\n.\n^\n\"Anurag Kashyap's 'That Girl in Yellow Boots': A Must-See Film You'll Wish You Could Forget\"\n.\nHuffPost\n. 26 August 2011.\nArchived\nfrom the original on 25 January 20",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "15.\n^\nRoger Ebert (14 December 2011).\n\"That Girl in Yellow Boots review\"\n.\nChicago Sun-Times\n. rogerebert.com.\nArchived\nfrom the original on 9 March 2012\n. Retrieved\n3 March\n2012\n.\n^\n\"Gangs of Wasseypur: World premiere at Cannes\"\n. CNN-IBN. 24 April 2012. Archived from\nthe original\non 25 April 2012\n. Retrieved\n24 April\n2012\n.\n^\n\"\n'Gangs of Wasseypur' opens London Indian Film Fest\"\n.\nZee News\n. 22 July 2012.\nArchived\nfrom the original on 11 October 2020\n. Retrieved\n28 November\n2014\n.\n^\n\"\n'Wasseyp",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ur', 'Shanghai', 'Peddlers' at Toronto film fest\"\n. 1 August 2012.\nArchived\nfrom the original on 28 October 2017\n. Retrieved\n31 May\n2015\n.\n^\n\"Gangs of wasseypur to be screened at the Sundance Film Festival\"\n. CNN-IBN. 30 November 2012. Archived from\nthe original\non 3 December 2012\n. Retrieved\n31 January\n2015\n.\n^\n\"Gangs of Wasseypur\"\n.\nMetacritic\n.\nArchived\nfrom the original on 5 November 2015\n. Retrieved\n10 December\n2015\n.\n^\nAdarsh, Taran (7 August 2012).\n\"Taran Adarsh Review\"\n.\nBollywood Hungam",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "a\n. Archived from\nthe original\non 24 May 2015\n. Retrieved\n5 May\n2015\n.\n^\nLee, Maggie (7 June 2012).\n\"Gangs of Wasseypur Review\"\n.\nVariety\n.\nArchived\nfrom the original on 18 May 2015\n. Retrieved\n1 July\n2012\n.\n^\nMarshall, Lee (24 May 2012).\n\"Gangs of Wasseypur Review\"\n.\nScreen International\n.\nArchived\nfrom the original on 28 June 2012\n. Retrieved\n29 June\n2012\n.\n^\n\"Gangs of Wasseypur 3rd week box-office collection\"\n. boxofficecapsule.com. 14 July 2012. Archived from\nthe original\non 2 February 2015\n",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            ". Retrieved\n1 February\n2015\n.\n^\n\"Gangs of Wasseypur 2 2nd week box-office collection\"\n. boxofficecapsule.com. 26 August 2012. Archived from\nthe original\non 2 February 2015\n. Retrieved\n1 February\n2015\n.\n^\n\"Anurag Kashyap's short film gets over 4 lakh hits in 2 days\"\n.\nHindustan Times\n. 1 November 2013. Archived from\nthe original\non 17 February 2015\n. Retrieved\n31 January\n2015\n.\n^\n\"I want the audiences to feel angry: Anurag Kashyap\"\n.\nYouTube\n.\nArchived\nfrom the original on 11 March 2016\n. Retriev",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ed\n31 January\n2015\n.\n^\nDubey, Bharati (25 January 2012).\n\"Film industry to mark Phalke centenary\"\n.\nThe Times of India\n.\nArchived\nfrom the original on 19 April 2013\n. Retrieved\n28 January\n2012\n.\n^\n\"Bollywood directors join hands to pay homage to Indian cinema\"\n.\nThe Times of India\n. 7 May 2012.\nArchived\nfrom the original on 22 June 2012\n. Retrieved\n28 January\n2012\n.\n^\n\"Cannes 2013 official selection\"\n. Festival De Cannes. 18 April 2013.\nArchived\nfrom the original on 12 February 2015\n. Retrieved\n",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "2 March\n2015\n.\n^\n\"Bombay Talkies Box office report\"\n. Box Office India. Archived from\nthe original\non 17 March 2015\n. Retrieved\n15 April\n2015\n.\n^\nAdarsh, Taran (1 May 2013).\n\"Bombay Talkies Review\"\n.\nBollywood Hungama\n. Archived from\nthe original\non 4 May 2013\n. Retrieved\n3 May\n2013\n.\n^\nChopra, Anupama (4 May 2013).\n\"Anupama Chopra's review: Bombay Talkies\"\n.\nHindustan Times\n. Archived from\nthe original\non 4 May 2013\n. Retrieved\n4 May\n2013\n.\n^\n\"Ugly receives a standing ovation\"\n.\nFilmfare\n. 22 M",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ay 2013.\nArchived\nfrom the original on 3 June 2015\n. Retrieved\n27 March\n2015\n.\n^\n\"Anurag Kashyap's Files Petition\"\n.\nThe Times of India\n. 26 November 2013.\nArchived\nfrom the original on 3 January 2014\n. Retrieved\n20 June\n2014\n.\n^\n\"Anurag Kashyap's Ugly Will Release with Smoking Ads\"\n.\nThe Indian Express\n. 1 June 2014.\nArchived\nfrom the original on 5 June 2014\n. Retrieved\n20 June\n2014\n.\n^\nSurabhi Redkar (26 December 2014).\n\"Ugly Review\"\n. Koimoi.\nArchived\nfrom the original on 26 December 2014\n. R",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "etrieved\n26 January\n2015\n.\n^\n\"Ugly review: Anurag Kashyap is back, with his best film since Black Friday\"\n.\nFirstpost\n. 24 December 2014.\nArchived\nfrom the original on 24 December 2014\n. Retrieved\n25 December\n2014\n.\n^\nSen, Sushmita (9 February 2015).\n\"\n'Bombay Velvet': First Look of Karan Johar as Villain in Ranbir-Anushka Starrer\"\n.\nInternational Business Times\n.\nArchived\nfrom the original on 24 March 2015\n. Retrieved\n26 March\n2015\n.\n^\n\"Bombay Velvet: All you need to know about the film\"\n.\nThe ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "Times of India\n.\nArchived\nfrom the original on 23 February 2015\n. Retrieved\n7 May\n2015\n.\n^\nAnupama Chopra (15 May 2015).\n\"Bombay Velvet review by Anupama Chopra: It's a glorious mess\"\n.\nHindustan Times\n. Archived from\nthe original\non 17 May 2015\n. Retrieved\n17 May\n2015\n.\n^\n\"Film Review: The Great Gatsby meets the Goodfellas in Anurag Kashyap's Bombay Velvet\"\n.\nBusiness Standard\n. 16 May 2015.\nArchived\nfrom the original on 18 May 2015\n. Retrieved\n17 May\n2015\n.\n^\n\"Bombay Velvet is Ranbir Kapoor's ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "biggest career disaster\"\n.\nIndia Today\n. 19 May 2015.\nArchived\nfrom the original on 20 May 2015\n. Retrieved\n19 May\n2015\n.\n^\n\"\n'Bombay Velvet' fades against 'Piku'\n\"\n.\nThe Hindu\n. 19 May 2015.\nArchived\nfrom the original on 28 September 2018\n. Retrieved\n19 May\n2015\n.\n^\n\"Rajeev Masand interview with Anurag Kashyap\"\n.\nYouTube\n. 13 May 2016.\nArchived\nfrom the original on 28 September 2018\n. Retrieved\n5 May\n2018\n.\n^\n\"Raman Raghav 2.0 to compete at Sydney Film Festival\"\n.\nThe Hindu\n. 12 May 2016.\nArchi",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ved\nfrom the original on 11 April 2018\n. Retrieved\n19 May\n2016\n.\n^\n\"Anurag Kashyap's Raman Raghav 2.0 lands a big punch in Cannes\"\n.\nHindustan Times\n. 17 May 2016.\nArchived\nfrom the original on 18 May 2016\n. Retrieved\n19 May\n2016\n.\n^\na\nb\nSrivastav, Abhishek (10 January 2018).\n\"Mukkabaaz is a throwback to the storytelling prevelant [\nsic\n] in the 70s, says Anurag Kashyap\"\n. Firstpost.\nArchived\nfrom the original on 10 January 2018\n. Retrieved\n12 January\n2018\n.\n^\nKhan, Faizal (24 September 2017).\n\"",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "Ringside view\"\n.\nThe Financial Express\n.\nArchived\nfrom the original on 7 December 2017\n. Retrieved\n7 December\n2017\n.\n^\n\"Mukkabaaz premieres at Toronto: Anurag Kashyap's new film tackles cow vigilantism, provokes reaction\"\n.\nHindustan Times\n. 13 September 2017.\nArchived\nfrom the original on 21 January 2018\n. Retrieved\n12 January\n2018\n.\n^\nChatterjee, Saibal (11 January 2018).\n\"Mukkabaaz Movie Review: Anurag Kashyap Punches Back With Riveting Boxing Film\"\n. NDTV.\nArchived\nfrom the original on 15 Ju",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ne 2018\n. Retrieved\n12 January\n2018\n.\n^\nRawat, Kshitij (18 May 2018).\n\"Lust Stories trailer: Netflix original film promises tales of love and desire from the female perspective\"\n.\nThe Indian Express\n.\nArchived\nfrom the original on 18 May 2018\n. Retrieved\n18 May\n2018\n.\n^\nRamakrishnan, Swetha (15 June 2018).\n\"Lust Stories movie review: Netflix anthology is another step forward in Bollywood's sexual awakening\"\n. Firstpost.\nArchived\nfrom the original on 15 June 2018\n. Retrieved\n15 June\n2018\n.\n^\nChou",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "dhary, Vidhi (7 July 2018).\n\"Sacred Games: How India's first Netflix original came together\"\n.\nHindustan Times\n.\nArchived\nfrom the original on 15 July 2018\n. Retrieved\n25 July\n2018\n.\n^\n\"\n'Sacred Games' review: Saif Ali Khan's Netflix series garners positive reviews worldwide\"\n.\nThe Free Press Journal\n. 10 July 2018.\nArchived\nfrom the original on 13 July 2018\n. Retrieved\n6 August\n2018\n.\n^\nLynch, John (9 July 2018).\n\"Netflix's first original series from India, 'Sacred Games,' is an addictive crime",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " thriller with a 100% rating on Rotten Tomatoes\"\n.\nBusiness Insider\n.\nArchived\nfrom the original on 26 July 2018\n. Retrieved\n25 July\n2018\n.\n^\nMichel, Lincoln (21 July 2018).\n\"Sacred Games Is the Best New Show on Netflix You Aren't Watching\"\n.\nGQ\n.\nArchived\nfrom the original on 13 August 2018\n. Retrieved\n13 August\n2018\n.\n^\nMukherjee, Raka (12 September 2018).\n\"Abhishek Bachchan is 'Husband Material' According to TIFF, Here's Why\"\n. CNN-News18.\nArchived\nfrom the original on 13 September 2018\n. Ret",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "rieved\n28 September\n2018\n.\n^\nSarkar, Suparno (14 September 2018).\n\"Manmarziyan movie review: Critics' verdict and rating of Anurag Kashyap film\"\n.\nInternational Business Times\n.\nArchived\nfrom the original on 17 September 2018\n. Retrieved\n17 September\n2018\n.\n^\nDeshmukh, Ashwini (13 December 2019).\n\"Anurag Kashyap ropes in Tabu and Nawazuddin Siddiqui for Thriller Factory\"\n.\nFilmfare\n.\nArchived\nfrom the original on 14 December 2019\n. Retrieved\n15 December\n2019\n.\n^\n\"Ghost Stories movie review: Diba",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "kar Banerjee's political short film elevates an otherwise bland anthology that just isn't scary\"\n.\nFirstpost\n. 2 January 2020.\nArchived\nfrom the original on 2 January 2020\n. Retrieved\n2 January\n2020\n.\n^\n\"Anurag Kashyap: Examines Balance Between Truth, Power And Money\"\n.\nMid-Day\n. 19 May 2020.\nArchived\nfrom the original on 25 May 2020\n. Retrieved\n21 May\n2020\n.\n^\n\"Anurag Kashyap's 'Dobaaraa' to Open London Indian Film Festival (EXCLUSIVE)\"\n.\nVariety\n. 10 May 2022\n. Retrieved\n12 May\n2022\n.\n^\nThakur",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            ", Tanul (19 August 2022).\n\"Anurag Kashyap's 'Dobaaraa' Confounds, Confuses, Beguiles \u2013 Yet Stays in Your Head\"\n.\nThe Wire\n. Retrieved\n21 August\n2022\n.\n^\n\"Anurag Kashyap's Almost Pyaar with DJ Mohabbat set for world premiere at Marrakech Film Festival\"\n.\nThe Indian Express\n. 16 November 2022\n. Retrieved\n4 February\n2023\n.\n^\n\"Chiyaan Vikram, Anurag Kashyap clear the air on 'Kennedy' casting\"\n.\nThe Hindu\n. 22 May 2023\n. Retrieved\n3 June\n2023\n.\n^\nBunbury, Stephanie (26 May 2023).\n\"\n'Kennedy' Review: ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "Anurag Kashyap's Mumbai Thriller Is Enjoyably Grim, But Weighed Down By Detail \u2013 Cannes Film Festival\"\n.\nDeadline\n. Retrieved\n3 June\n2023\n.\n^\nRamnath, Nandini (26 October 2012).\n\"Guneet Monga: Sealing the deal\"\n.\nMint\n.\nArchived\nfrom the original on 3 December 2013\n. Retrieved\n26 May\n2013\n.\n^\n\"Cannes: India's New Wave Producer Guneet Monga\"\n.\nThe Hollywood Reporter\n. 22 May 2013.\nArchived\nfrom the original on 9 June 2013\n. Retrieved\n26 May\n2013\n.\n^\n\"Cannes Calling\"\n.\nThe Indian Express\n. 17 Apri",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "l 2010.\nArchived\nfrom the original on 22 April 2010.\n^\n\"Official Selection of Festival 2010: Udaan\"\n. Festival De Cannes.\nArchived\nfrom the original on 24 February 2015\n. Retrieved\n7 May\n2015\n.\n^\n\"With over a dozen films in the pipeline, the very offbeat Anurag Kashyap has emerged as an unlikely big player in Bollywood\"\n.\nIndia Today\n. 3 November 2012.\nArchived\nfrom the original on 3 February 2013\n. Retrieved\n26 May\n2013\n.\n^\nAbhishek Raghunath (9 May 2012).\n\"Anurag Kashyap is playing a positive ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "role\"\n.\nForbes India\n.\nArchived\nfrom the original on 26 June 2015\n. Retrieved\n6 May\n2015\n.\n^\n\"Anurag Kashyap roped-in twelve directors for 'The Last Act'\n\"\n.\nThe Times of India\n. 8 December 2012.\nArchived\nfrom the original on 28 September 2018\n. Retrieved\n5 October\n2015\n.\n^\n\"BAFTA: 'Boyhood' wins top honours, 'The Lunchbox' misses award\"\n. Zee News. 9 February 2015.\nArchived\nfrom the original on 9 February 2015\n. Retrieved\n16 February\n2015\n.\n^\n\"Anurag Kashyap's film at Toronto Film Festival\"\n.\nM",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "id-Day\n. 2 August 2012.\nArchived\nfrom the original on 20 August 2012\n. Retrieved\n26 August\n2012\n.\n^\n\"Anurag Kashyap co-produces short film project on youtube\"\n.\nThe Hollywood Reporter\n. 4 June 2013.\nArchived\nfrom the original on 24 September 2015\n. Retrieved\n14 April\n2015\n.\n^\n\"Anurag Kashyap to mentor and co-produce another string of short films\"\n.\nMid-Day\n. 6 June 2013.\nArchived\nfrom the original on 19 October 2013\n. Retrieved\n14 April\n2015\n.\n^\n\"Yudh to replace Bade Achhe Lagte Hain\"\n.\nHindusta",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "n Times\n. 4 July 2014. Archived from\nthe original\non 6 July 2014\n. Retrieved\n6 July\n2014\n.\n^\n\"Anurag Kashyap: The World Before Her must be seen across India\"\n. NDTV. 23 April 2014.\nArchived\nfrom the original on 19 May 2015\n. Retrieved\n18 May\n2015\n.\n^\n\"\n'Katiyabaaz': A documentary maker challenges mainstream space\"\n.\nThe Times of India\n. 23 August 2014.\nArchived\nfrom the original on 26 August 2014\n. Retrieved\n30 August\n2014\n.\n^\n\"Phantom in conversation with team box office India\"\n. Box Office Ind",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ia. 4 October 2013.\nArchived\nfrom the original on 21 April 2015\n. Retrieved\n14 April\n2015\n.\n^\n\"Lootera: a slow pace romantic saga worth watching, say critics\"\n.\nHindustan Times\n. 5 July 2013. Archived from\nthe original\non 12 November 2013\n. Retrieved\n30 December\n2013\n.\n^\nKaushal, Sweta (7 February 2014).\n\"Movie review: Parineeti Chopra re-defines Bollywood heroine in Hasee Toh Phasee\"\n.\nHindustan Times\n. Archived from\nthe original\non 7 February 2014\n. Retrieved\n7 February\n2014\n.\n^\nMehta, Ankita ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "(6 March 2014).\n\"\n'Queen' Review Roundup: Watch it for Kangana's Superb Performance\"\n.\nInternational Business Times\n.\nArchived\nfrom the original on 10 March 2014\n. Retrieved\n10 March\n2014\n.\n^\n\"Top Ten Worldwide Grossers 2014\"\n. Box Office India. 8 May 2014. Archived from\nthe original\non 8 May 2014\n. Retrieved\n8 May\n2014\n.\n^\n\"62nd National Film Awards' winners: 'Haider' wins five, Kangana Ranaut's 'Queen' two\"\n.\nThe Indian Express\n. 24 March 2015.\nArchived\nfrom the original on 25 March 2015\n. Ret",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "rieved\n24 March\n2015\n.\n^\n\"Anushka Sharma turns producer with NH10\"\n. Firstpost. 31 October 2013.\nArchived\nfrom the original on 5 April 2016\n. Retrieved\n13 April\n2015\n.\n^\n\"Hunterrr and NH10 score well\"\n.\nFilmfare\n. 30 March 2015.\nArchived\nfrom the original on 18 May 2015\n. Retrieved\n11 May\n2015\n.\n^\n\"\n'Masaan' to release in India on July 24\"\n.\nThe Hindu\n. 28 May 2015\n. Retrieved\n3 June\n2015\n.\n^\n\"Pyaar Ka Punchnama still raking in moolah\"\n.\nThe Free Press Journal\n. 31 October 2015. Archived from\nth",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "e original\non 22 January 2016\n. Retrieved\n3 November\n2015\n.\n^\nJaafar, Ali (1 October 2015).\n\"Ridley Scott And Google Team Up With Richie Mehta And Anurag Kashyap For 'India In A Day'\n\"\n.\nDeadline Hollywood\n.\nArchived\nfrom the original on 4 October 2015\n. Retrieved\n5 October\n2015\n.\n^\nRamachandran, Naman (1 October 2015).\n\"Google, Ridley Scott, Anurag Kashyap Team for 'India in a Day'\n\"\n.\nVariety\n.\nArchived\nfrom the original on 5 October 2015\n. Retrieved\n5 October\n2015\n.\n^\nParussini, Gabriele (9 J",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "une 2016).\n\"How the Movie Udta Punjab Sparked a Debate About Drug Use in India\"\n.\nThe Wall Street Journal\n.\nArchived\nfrom the original on 19 June 2016\n. Retrieved\n15 June\n2016\n.\n^\n\"Udta Punjab row: Bombay HC clears film with just one cut, tells CBFC not to act like grandmother\"\n.\nThe Indian Express\n. 13 June 2016.\nArchived\nfrom the original on 27 June 2016\n. Retrieved\n15 June\n2016\n.\n^\nNarayan, Hari (31 August 2016).\n\"Gujarati film industry, still a work in progress\"\n.\nMint\n.\nArchived\nfrom the or",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "iginal on 21 December 2016\n. Retrieved\n17 March\n2017\n.\n^\nShaikh, Samina (6 October 2018).\n\"EXCLUSIVE! Anurag Kashyap, Vikramaditya Motwane, Vikas Bahl and Madhu Mantena dissolve their production company\"\n.\nThe Times of India\n.\nArchived\nfrom the original on 5 October 2018\n. Retrieved\n6 October\n2018\n.\n^\nPathak, Ankur (6 October 2018).\n\"\n'Queen' Director Vikas Bahl Sexually Assaulted Me, Phantom Films Did Nothing: Survivor Speaks Out\"\n.\nHuffPost\n.\nArchived\nfrom the original on 6 October 2018\n. Retr",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ieved\n7 October\n2018\n.\n^\n\"Phantom Films Dissolved; Anurag Kashyap Says, 'All Dreams Come To An End'!\"\n.\nwww.filmibeat.com\n. 6 October 2018.\nArchived\nfrom the original on 2 September 2021\n. Retrieved\n2 September\n2021\n.\n^\n\"Anurag Kashyap launches new production company\"\n.\nThe Indian Express\n. 2 June 2020.\nArchived\nfrom the original on 9 June 2020\n. Retrieved\n2 June\n2020\n.\n^\n\"Birthday special: Meet Anurag Kashyap \u2013 The Actor\"\n.\nMid-Day\n. 10 September 2015.\nArchived\nfrom the original on 4 October 20",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "15\n. Retrieved\n5 October\n2015\n.\n^\n\"The Front Row Breakout Star- Nimrat Kaur\"\n. YouTube.\nArchived\nfrom the original on 10 March 2016\n. Retrieved\n25 March\n2015\n.\n^\nNikhat Kazmi (12 May 2011).\n\"Shagird Movie Review\"\n.\nThe Times of India\n.\nArchived\nfrom the original on 21 August 2014\n. Retrieved\n25 March\n2015\n.\n^\n\"Anurag Kashyap injures himself during 'Akira' shoot\"\n.\nBusiness Standard\n. 20 June 2015.\nArchived\nfrom the original on 21 June 2015\n. Retrieved\n21 June\n2015\n.\n^\nKashyap, Archita (20 Decemb",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "er 2017).\n\"Chhuri review: Tisca Chopra, Anurag Kashyap's short film is sharp but not as powerful as Chutney\"\n. Firstpost.\nArchived\nfrom the original on 22 December 2017\n. Retrieved\n20 December\n2017\n.\n^\n\"Imaikka Nodigal review:The film benefits from the exceptional actors who play the lead roles\"\n.\nSify\n. 30 August 2018. Archived from\nthe original\non 30 August 2018\n. Retrieved\n30 August\n2018\n.\n^\nNaahar, Rohan (25 December 2020).\n\"AK vs AK movie review: Anil Kapoor unleashes inner Chembur against ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "Anurag Kashyap in inventive but inconsistent Netflix film\"\n.\nHindustan Times\n.\nArchived\nfrom the original on 28 December 2020\n. Retrieved\n25 December\n2020\n.\n^\nThakur, Tanul.\n\"AK vs AK's Audacious Premise and Self-Awareness About Bollywood Ultimately Falls Short\"\n.\nThe Wire\n.\nArchived\nfrom the original on 29 December 2020\n. Retrieved\n25 December\n2020\n.\n^\n\"Anurag Kashyap calls his character Kazbe in Bad Cop 'very contrasting': He may be the villain but he's not the bad guy\"\n.\nHindustan Times\n. 8 J",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "une 2024\n. Retrieved\n16 July\n2024\n.\n^\nSaminathan, Nithilan (13 June 2024),\nMaharaja\n(Action, Crime, Drama), Vijay Sethupathi, Anurag Kashyap, Mamta Mohandas, Passion Studios, The Route\n, retrieved\n18 February\n2025\n^\nRaman, Sruthi Ganapathy (14 June 2024).\n\"Maharaja Review: A Flawed Yet Gripping Human Drama In Which Storytelling Is The Hero\"\n.\nwww.filmcompanion.in\n. Retrieved\n18 February\n2025\n.\n^\nBureau, The Hindu (15 January 2025).\n\"Alejandro I\u00f1\u00e1rritu offers Anurag Kashyap a role after watching ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "'Maharaja'\n\"\n.\nThe Hindu\n.\nISSN\n0971-751X\n. Retrieved\n18 February\n2025\n.\n{{\ncite news\n}}\n:\n|last=\nhas generic name (\nhelp\n)\n^\na\nb\n\"Ugly comes from personal guilt\"\n.\nThe Times of India\n. 23 December 2014.\nArchived\nfrom the original on 5 March 2015\n. Retrieved\n6 May\n2015\n.\n^\n\"Anurag Kashyap: My life has always been controlled by women\"\n. NDTV. 10 May 2013.\nArchived\nfrom the original on 18 May 2015\n. Retrieved\n10 May\n2015\n.\n^\n\"Anurag kashyap married to kalki\"\n. Rediff. 2 May 2011.\nArchived\nfrom the",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " original on 3 April 2015\n. Retrieved\n22 March\n2015\n.\n^\n\"Anurag Kashyap's girlfriend Kalki\"\n.\nSify\n. 24 January 2009. Archived from\nthe original\non 22 December 2015\n. Retrieved\n5 May\n2015\n.\n^\n\"Kashyap & Kalki Separating\"\n.\nOutlook\n. 13 November 2013. Archived from\nthe original\non 27 February 2014\n. Retrieved\n22 March\n2015\n.\n^\nAnkur Pathak & Sharmeen Hakim Indorewala (19 May 2015).\n\"Conscious Uncoupling\"\n.\nMumbai Mirror\n.\nArchived\nfrom the original on 20 May 2015\n. Retrieved\n19 May\n2015\n.\n^\n\"Anur",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ag Kashyap is atheist\"\n.\nReddit\n. 4 July 2013.\nArchived\nfrom the original on 16 June 2014\n. Retrieved\n11 October\n2013\n.\n^\n\"Found discrepancy, manipulation in income worth \u20b9650 crore\"\n.\nHindustan Times\n. 4 March 2021.\nArchived\nfrom the original on 13 March 2021\n. Retrieved\n5 March\n2021\n.\n^\n\"Over Rs 650 cr discrepancies found after raids on Pannu, Kashyap\"\n.\nIndian Express\n. 4 March 2021.\nArchived\nfrom the original on 13 March 2021\n. Retrieved\n5 March\n2021\n.\n^\nSzaniawski, Jeremi; Jeong, Seung-hoon",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " (2016).\nThe Global Auteur: The Politics of Authorship in 21st Century Cinema\n. Bloomsbury Publishing. p.\u00a0287.\nISBN\n9781501312656\n.\nArchived\nfrom the original on 26 December 2017\n. Retrieved\n26 December\n2017\n.\n^\nFrancis, Alys (16 July 2014).\n\"How India's film festival boom is boosting indie cinema\"\n. BBC.\nArchived\nfrom the original on 16 December 2017\n. Retrieved\n5 December\n2017\n.\n^\nChopra, Anupama (2015).\nThe Front Row: Conversations on Cinema\n.\nHarperCollins\n.\nISBN\n9789351770022\n.\nArchived\nfro",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "m the original on 29 October 2021\n. Retrieved\n8 November\n2020\n.\n^\n\"We shot Black Friday with hidden cams: Anurag Kashyap\"\n.\nRediff.com\n. 7 February 2007.\nArchived\nfrom the original on 27 December 2014\n. Retrieved\n29 January\n2015\n.\n^\n\"Our cinema is immature\"\n.\nRediff.com\n. 24 October 2007.\nArchived\nfrom the original on 24 September 2015\n. Retrieved\n1 February\n2015\n.\n^\na\nb\nGhosh, Sankhayan (2 January 2015).\n\"Anurag Kashyap says he is bored with his own ideas\"\n.\nThe Indian Express\n.\nArchived\nfrom t",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "he original on 4 January 2015\n. Retrieved\n1 February\n2015\n.\n^\n\"True to its title, Ugly portrays awful side of India\"\n.\nThe Hindu\n. 19 May 2013.\nArchived\nfrom the original on 15 February 2014\n. Retrieved\n6 May\n2015\n.\n^\nSen, Raja.\n\"Review: Gangs of Wasseypur is a brilliant soundtrack\"\n.\nRediff.com\n.\nArchived\nfrom the original on 21 June 2012\n. Retrieved\n1 July\n2012\n.\n^\n\"Bombay Velvet album is experimental\"\n.\nRediff.com\n. 3 May 2015.\nArchived\nfrom the original on 5 May 2015\n. Retrieved\n7 May\n2015\n.",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "\n^\na\nb\nJayaraman, Gayatri (14 May 2015).\n\"Anurag Kashyap: The Runaway Director\"\n.\nIndia Today\n.\nArchived\nfrom the original on 28 January 2016\n. Retrieved\n19 January\n2016\n.\n^\n\"Cameron Bailey: Anurag Kashyap one of the most knowledgeable filmmakers\"\n.\nThe Times of India\n. 23 November 2017.\nArchived\nfrom the original on 28 December 2017\n. Retrieved\n25 November\n2017\n.\n^\nShekhar, Nishant (22 June 2016).\n\"Why end of drugs will only leave Anurag Kashyap at a loss\"\n.\nThe Indian Express\n.\nArchived\nfrom t",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "he original on 7 November 2017\n. Retrieved\n6 November\n2017\n.\n^\nKataria, Naina (2 September 2015).\n\"10 Times Anurag Kashyap Proved He Is The Most Badass Celebrity in Bollywood\"\n. MensXP.com.\nArchived\nfrom the original on 5 September 2015\n. Retrieved\n6 September\n2015\n.\n^\n\"The Inspiration Behind Anurag Kashyap's films\"\n.\nRediff.com\n. 21 June 2012.\nArchived\nfrom the original on 28 September 2015\n. Retrieved\n30 May\n2015\n.\n^\n\"In conversation with Anurag kashyap\"\n. Dear Cinema.com. 8 February 2009. Arc",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "hived from\nthe original\non 2 February 2015\n. Retrieved\n1 February\n2015\n.\n^\nSheth, Rachana.\n\"Mumbai mafia is more glamourous [\nsic\n]\"\n. Glamsham. Archived from\nthe original\non 25 June 2012\n. Retrieved\n25 June\n2012\n.\n^\n\"Sylvia inspired by nanavati case\"\n.\nThe Indian Express\n. 5 May 2015.\nArchived\nfrom the original on 18 May 2015\n. Retrieved\n6 May\n2015\n.\n^\na\nb\nAmitava Kumar (23 December 2008).\n\"Slumdog Millionaire's Bollywood Ancestors\"\n.\nVanity Fair\n.\nArchived\nfrom the original on 2 April 2015\n. R",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "etrieved\n25 March\n2015\n.\n^\n\"French distinction conferred on Anurag Kashyap at Cannes, 20 May 2013\"\n.\nFrance in India (French Embassy in India)\n.\nArchived\nfrom the original on 10 March 2016\n. Retrieved\n28 June\n2016\n.\n^\n\"Anurag Kashyap on the Venice Film Festival jury\"\n.\nDaily News and Analysis\n. 30 July 2009.\nArchived\nfrom the original on 3 February 2015\n. Retrieved\n26 January\n2015\n.\n^\n\"Anurag Kashyap part of Sundance film festival jury\"\n.\nThe Times of India\n. 20 December 2012.\nArchived\nfrom the ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "original on 23 July 2015\n. Retrieved\n26 January\n2015\n.\n^\n\"Anurag Kashyap to be a part of Marrakech International Film Festival 2013\"\n.\nThe Indian Express\n. 1 November 2013.\nArchived\nfrom the original on 11 October 2020\n. Retrieved\n30 May\n2015\n.\n^\n\"Anurag Kashyap in Busan Film Festival's jury\"\n.\nThe Indian Express\n. 17 August 2015.\nArchived\nfrom the original on 20 August 2015\n. Retrieved\n28 August\n2015\n.\n^\n\"Anurag Kashyap, Arunima Sinha among others honoured with Yash Bharti award\"\n.\nThe Economic",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " Times\n. 21 March 2016.\nArchived\nfrom the original on 24 March 2016\n. Retrieved\n24 March\n2016\n.\n^\n\"Saurabh Shukla makes comeback with red hot\"\n.\nThe Indian Express\n. 2 February 2011.\nArchived\nfrom the original on 11 October 2020\n. Retrieved\n6 May\n2015\n.\n^\n\"Grand Jury Award for\nBlack Friday\n\"\n.\nArchived\nfrom the original on 5 May 2015\n. Retrieved\n5 May\n2015\n.\n^\n\"Mid Day's Black Friday reaches Locarno\"\n.\nSify\n. 17 May 2004. Archived from\nthe original\non 9 September 2015\n. Retrieved\n8 May\n2015\n.\n^\n",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "\"Black Friday\"\n. Pardo.ch. Archived from\nthe original\non 18 May 2015\n. Retrieved\n8 May\n2015\n.\n^\n\"Winners of 56th Filmfare Awards\"\n.\nSify\n. 30 January 2011. Archived from\nthe original\non 11 September 2015\n. Retrieved\n5 May\n2015\n.\n^\n\"Winners of 58th Idea Filmfare Awards 2012\"\n.\nBollywood Hungama\n. 20 January 2013. Archived from\nthe original\non 23 January 2013\n. Retrieved\n23 January\n2013\n.\n^\n\"60th Britannia Filmfare Awards 2014: Complete list of winners\"\n.\nThe Times of India\n. 31 January 2015.\nArch",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ived\nfrom the original on 3 February 2015\n. Retrieved\n31 January\n2015\n.\nExternal links\n[\nedit\n]\nWikimedia Commons has media related to\nAnurag Kashyap\n.\nAnurag Kashyap\nat\nIMDb\nAnurag Kashyap\nat\nRotten Tomatoes\nAnurag Kashyap\nat\nBollywood Hungama\nv\nt\ne\nAnurag Kashyap\nFilm directed\nPaanch\n(unreleased)\nBlack Friday\n(2004)\nReturn of Hanuman\n(2007)\nNo Smoking\n(2007)\nGulaal\n(2009)\nDev.D\n(2009)\nMumbai Cutting\n(2010)\nThat Girl in Yellow Boots\n(2011)\nGangs of Wasseypur\nPart 1\nPart 2\n(2012)\nBombay Talkies\n",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "(2013)\nUgly\n(2013)\nBombay Velvet\n(2015)\nRaman Raghav 2.0\n(2016)\nMukkabaaz\n(2017)\nLust Stories\n(2018)\nManmarziyaan\n(2018)\nGhost Stories\n(2020)\nChoked: Paisa Bolta Hai\n(2020)\nDobaaraa\n(2022)\nAlmost Pyaar with DJ Mohabbat\n(2023)\nKennedy\n(2023)\nTelevision\nSacred Games\nFilms written only\nSatya\n(1998) (screenplay)\nKaun?\n(1999)\nShool\n(1999) (dialogues)\nPaisa Vasool\n(2004)\nYuva\n(2004) (dialogues)\nWater\n(2005)\nFool & Final\n(2007)\nUdaan\n(2010)\nHasee Toh Phasee\n(2014) (dialogues)\nMoothon\n(2019) (dialogues)",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "\nFilms produced only\nUdaan\n(2010)\nMichael\n(2011)\nShaitan\n(2011)\nAiyyaa\n(2012)\nLuv Shuv Tey Chicken Khurana\n(2012)\nTasher Desh\n(2012)\nPeddlers\n(2012)\nMonsoon Shootout\n(2013)\nShahid\n(2013)\nThe Lunchbox\n(2013)\nLootera\n(2013)\nHasee Toh Phasee\n(2014)\nQueen\n(2014)\nNH10\n(2015)\nHunterrr\n(2015)\nMasaan\n(2015)\nShaandaar\n(2015)\nUdta Punjab\n(2016)\nWrong Side Raju\n(2016)\nTrapped\n(2016)\nHaraamkhor\n(2017)\nBhavesh Joshi Superhero\n(2018)\nMoothon\n(2019)\nSaand Ki Aankh\n(2019)\nGhoomketu\n(2020)\nShorts\nLast Train to M",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ahakali\n(1999)\nThat Day After Everyday\n(2013)\nKali-Katha\n(2015)\nSee also\nAnurag Kashyap filmography\nAnurag Kashyap Films\nPhantom Films\nv\nt\ne\nFilmfare Award\nfor\nBest Dialogue\n1959\u20131970\nRajinder Singh Bedi\n(1959)\nRamanand Sagar\n(1960)\nAmanullah Khan,\nKamal Amrohi\n,\nWajahat Mirza\n& Ehsan Rizvi (1961)\nWajahat Mirza\n(1962)\nAkhtar ul Iman\n(1963)\nArjun Dev Rashk (1964)\nGovind Moonis (1965)\nAkhtar ul Iman\n(1966)\nVijay Anand\n(1967)\nManoj Kumar\n(1968)\nAli Raza (1969)\nPt Anand Kumar (1970)\n1971\u20131990\nRajind",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "er Singh Bedi\n(1971)\nGulzar\n(1972)\nRamesh Pant (1973)\nGulzar\n(1974)\nKaifi Azmi\n(1975)\nSalim-Javed\n(1976)\nSagar Sarhadi (1977)\nVrajendra Gaur (1978)\nRahi Masoom Raza\n(1979)\nSatyadev Dubey\n(1980)\nShabd Kumar (1981)\nKader Khan\n(1982)\nDr. Achla Nagar (1983)\nMahesh Bhatt\n(1984)\nSai Paranjpye\n(1985)\nRahi Masoom Raza\n(1986)\nno award\n(1987)\nno award\n(1988)\nKamlesh Pandey (1989)\nJaved Akhtar\n(1990)\n1991\u20132010\nSuraj Sanim (1991 )\nRahi Masoom Raza\n(1992)\nKader Khan\n(1993)\nProf Jay Dixit (1994)\nK K Singh (19",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "95)\nAditya Chopra\n&\nJaved Siddiqui\n(1996)\nGulzar\n(1997)\nAditya Chopra\n(1998)\nRajkumar Santoshi\n&\nK. K. Raina\n(1999)\nHriday Lani\n& Pathik Vats (2000)\nO. P. Dutta\n(2001)\nKaran Johar\n(2002)\nGulzar\n&\nJaideep Sahni\n(2003)\nAbbas Tyrewala\n(2004)\nAditya Chopra\n(2005)\nPrakash Jha\n(2006)\nRajkumar Hirani\n&\nAbhijat Joshi\n(2007)\nImtiaz Ali\n(2008)\nManu Rishi\n(2009)\nRajkumar Hirani\n,\nAbhijat Joshi\n(2010)\n2011\u2013present\nHabib Faisal\n(2011)\nFarhan Akhtar\n(2012)\nAnurag Kashyap\n,\nZeishan Quadri\n, Akhilesh Jaiswal & ",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "Sachin Ladia (2013)\nSubhash Kapoor\n(2014)\nAbhijat Joshi\n&\nRajkumar Hirani\n(2015)\nHimanshu Sharma\n(2016)\nRitesh Shah\n(2017)\nHitesh Kewaliya (2018)\nAkshat Ghildial (2019)\nVijay Maurya\n(2020)\nJuhi Chaturvedi\n(2021)\nv\nt\ne\nFilmfare Award for Best Editing\n1955-1998\nHrishikesh Mukherjee\n(1955)\nG.G. Mayekar\n(1956)\nShivaji Avadhut\n(1957)\nHrishikesh Mukherjee\n(1958)\nChintaman Borkar\n(1959)\nMoosa Mansoor\n(1960)\nG.G. Mayekar\n(1961)\nKeshav Naidu\n(1962)\nPran Mehra\n(1964)\nN. M. Shankar\n(1968)\nHrishikesh Mukher",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "jee\n(1972)\nM. S. Shinde\n(1975)\nB. Prasad\n(1979)\nBhanudas Divakar\n(1980)\nS. V. Mane\n(1981)\nK. R. Kitoo\n(1983)\nRenu Saluja\n(1989)\nRenu Saluja\n(1995)\nV.N. Mayekar\n(1997)\nRajiv Rai\n(1998)\n1999-Present\nApurva Asrani\n&\nBhanu Daya\n(1999)\nJethu Mundul\n(2000)\nA. Sreekar Prasad\n(2002)\nChandan Arora\n(2003)\nShimit Amin\n(2004)\nRameshwar S. Bhagat\n(2005)\nBela Sehgal\n(2006)\nBela Sehgal\n(2007)\nAmitabh Shukla\n(2008)\nAmit Pawar\n(2009)\nA. Sreekar Prasad\n(2010)\nNamrata Rao\n(2011)\nHuzefa Lokhandwala\n(2012)\nNamrata R",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "ao\n(2013)\nAarif Sheikh\n(2014)\nAbhijit Kokate\n&\nAnurag Kashyap\n(2015)\nA. Sreekar Prasad\n(2016)\nMonisha R Baldawa (2017)\nNitin Baid (2018)\nv\nt\ne\nFilmfare Award for Best Screenplay\n1969\u20131980\nNabendu Ghosh\n(1969)\nHrishikesh Mukherjee\n(1970)\nVijay Anand\n(1971)\nBasu Chatterjee\n(1972)\nArvind Mukherjee\n(1973)\nSalim-Javed\n(1974)\nShama Zaidi\n&\nKaifi Azmi\n(1975)\nSalim-Javed\n(1976)\nBasu Chatterjee\n(1977)\nLekh Tandon\n,\nVrajendra Kaur\n&\nMadhusudan Kalekar\n(1978)\nKamleshwar\n(1979)\nGirish Karnad\n&\nB. V. Karanth",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "\n(1980)\n1981\u20132000\nVijay Tendulkar\n(1981)\nK. Balachander\n(1982)\nSalim-Javed\n(1983)\nVijay Tendulkar\n(1984)\nMrinal Sen\n(1985)\nGoutam Ghose\n& Partha Banerjee (1986)\nno award\n(1987)\nno award\n(1988)\nNasir Hussain\n(1989)\nShiv Kumar Subramaniam\n(1990)\nBasu Chatterjee\n(1991)\nTapan Sinha\n(1992)\nAziz Mirza\n&\nManoj Lalwani\n(1993)\nRobin Bhatt\n,\nJaved Siddiqui\n&\nAkash Khurana\n(1994)\nSooraj Barjatya\n(1995)\nAditya Chopra\n(1996)\nRajkumar Santoshi\n(1997)\nSubhash Ghai\n(1998)\nKaran Johar\n(1999)\nJohn Matthew Matthan",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "\n(2000)\n2001\u2013present\nHoney Irani\n&\nRavi Kapoor\n(2001)\nFarhan Akhtar\n(2002)\nMani Ratnam\n(2003)\nRajkumar Hirani\n,\nVidhu Vinod Chopra\n&\nLajan Joseph\n(2004)\nMani Ratnam\n(2005)\nNina Arora\n&\nManoj Tyagi\n(2006)\nJaideep Sahni\n(2007)\nAnurag Basu\n(2008)\nYogendra Vinayak Joshi\n&\nUpendra Sidhaye\n(2009)\nRajkumar Hirani\n,\nVidhu Vinod Chopra\n&\nAbhijat Joshi\n(2010)\nAnurag Kashyap\n&\nVikramaditya Motwane\n(2011)\nAkshat Verma\n(2012)\nSanjay Chauhan\n&\nTigmanshu Dhulia\n(2013)\nChetan Bhagat\n,\nAbhishek Kapoor\n,\nSupratik",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " Sen\n&\nPubali Chaudhari\n(2014)\nRajkumar Hirani\n,\nAbhijat Joshi\n(2015)\nJuhi Chaturvedi\n(2016)\nShakun Batra\n&\nAyesha Devitre\n(2017)\nShubhashish Bhutiani\n(2018)\nSriram Raghavan\n,\nArijit Biswas\n,\nPooja Ladha Surti\n,\nYogesh Chandekar\n&\nHemanth M. Rao\n(2019)\nZoya Akhtar\n&\nReema Kagti\n(2020)\nRohena Gera\n(2021)\nv\nt\ne\nFilmfare Award for Best Story\n1955\u20131970\nMukhram Sharma\n(1955)\nRajinder Singh Bedi\n(1956)\nAmiya Chakrabarty\n(1957)\nAkhtar Mirza\n(1958)\nMukhram Sharma\n(1959)\nSubodh Ghosh\n(1960)\nRuby Sen\n(196",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "1)\nC. V. Sridhar\n(1962)\nK. P. Kottarakara\n(1963)\nJarasandha\n(1964)\nBan Bhatt\n(1965)\nAkhtar Mirza\n(1966)\nR. K. Narayan\n(1967)\nManoj Kumar\n(1968)\nSachin Bhowmick\n(1969)\nVasant Shankar Kanetkar\n(1970)\n1971\u20131990\nChandrakant Kakodkar\n(1971)\nHrishikesh Mukherjee\n(1972)\nBasu Bhattacharya\n(1973)\nSalim\u2013Javed\n(1974)\nKaifi Azmi\n,\nIsmat Chughtai\n(1975)\nSalim\u2013Javed\n(1976)\nBalaichand Mukherjee\n(1977)\nSarat Chandra Chattopadhyay\n(1978)\nDinesh Thakur\n(1979)\nShanker Shesh\n(1980)\nVijay Tendulkar\n(1981)\nChetan Ana",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "nd\n(1982)\nSamaresh Basu\n(1983)\nS. D. Palwalker\n(1984)\nMahesh Bhatt\n(1985)\nAleem Masroor\n(1986)\nno award\n(1987)\nno award\n(1988)\nSubodh Ghosh\n(1989)\nK. Viswanath\n(1990)\n1991\u20132010\nRajkumar Santoshi\n(1991 )\nHoney Irani\n(1992)\nno award given\n(1993)\nSutanu Gupta\n(1994)\nK. K. Singh\n(1995)\nRam Gopal Varma\n(1996)\nGulzar\n(1997)\nKamal Haasan\n(1998)\nMahesh Bhatt\n(1999)\nVinay Shukla\n(2000)\nHoney Irani\n(2001)\nAshutosh Gowariker\n(2002)\nJaideep Sahni\n(2003)\nNagesh Kukunoor\n(2004)\nAditya Chopra\n(2005)\nSudhir Mis",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "hra\n,\nRuchi Narain\n&\nShiv Kumar Subramaniam\n(2006 )\nRajkumar Hirani\n&\nVidhu Vinod Chopra\n(2007)\nAmole Gupte\n(2008)\nAbhishek Kapoor\n(2009)\nAbhijat Joshi\n&\nRajkumar Hirani\n(2010)\n2011\u2013present\nAnurag Kashyap\n&\nVikramaditya Motwane\n(2011)\nSanjay Chauhan\n(2012)\nJuhi Chaturvedi\n(2013)\nSubhash Kapoor\n(2014)\nRajat Kapoor\n(2015)\nV. Vijayendra Prasad\n(2016)\nShakun Batra\n(2017)\nAmit V. Masurkar\n(2018)\nAnubhav Sinha\n(2019)\nAnubhav Sinha\n&\nGaurav Solanki\n(2020)\nAnubhav Sinha\n&\nMrunmayee Lagoo Waikul\n(2021)\nA",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "uthority control databases\nInternational\nISNI\nVIAF\nWorldCat\nNational\nGermany\nUnited States\nFrance\nBnF data\nSpain\nNetherlands\nPoland\nIsrael\nArtists\nMusicBrainz\nPeople\nDeutsche Biographie\nOther\nIdRef\nRetrieved from \"\nhttps://en.wikipedia.org/w/index.php?title=Anurag_Kashyap&oldid=1286657732\n\"\nCategories\n:\nAnurag Kashyap\n1972 births\nLiving people\nHindi-language film directors\nFilm directors from Uttar Pradesh\nIndian television directors\nIndian male screenwriters\nPeople from Gorakhpur\nHansraj Colleg",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "e alumni\nIndian experimental filmmakers\nScindia School alumni\nIndian atheists\nHindi film producers\nChevaliers of the Ordre des Arts et des Lettres\nFilmfare Awards winners\n20th-century Indian people\n21st-century Indian people\nFilm producers from Uttar Pradesh\nPeople involved in the Citizenship Amendment Act protests\nHidden categories:\nWebarchive template wayback links\nCS1: unfit URL\nAll articles with dead external links\nArticles with dead external links from August 2021\nRotten Tomatoes ID differe",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "nt from Wikidata\nRotten Tomatoes template using name parameter\nCS1 errors: generic name\nArticles with short description\nShort description is different from Wikidata\nUse Indian English from October 2016\nAll Wikipedia articles written in Indian English\nUse dmy dates from April 2021\nArticles with hCards\nCommons category link from Wikidata\nBollywood Hungama person template using Wikidata property P7923\nGood articles\nThis page was last edited on 21 April 2025, at 06:34\n(UTC)\n.\nText is available under",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            " the\nCreative Commons Attribution-ShareAlike 4.0 License\n;\nadditional terms may apply. By using this site, you agree to the\nTerms of Use\nand\nPrivacy Policy\n. Wikipedia\u00ae is a registered trademark of the\nWikimedia Foundation, Inc.\n, a non-profit organization.\nPrivacy policy\nAbout Wikipedia\nDisclaimers\nContact Wikipedia\nCode of Conduct\nDevelopers\nStatistics\nCookie statement\nMobile view\nSearch\nSearch\nToggle the table of contents\nAnurag Kashyap\n23 languages\nAdd topic",
+            "Link: https://en.wikipedia.org/wiki/Anurag_Kashyap"
+          ],
+          [
+            "Page 1 Text:\nhttps://en.wikipedia.org/wiki/Anurag_Kashyap \n \nAll about anurag kashyap   \n",
+            "anurag.pdf"
+          ]
+        ],
+        "sources": [
+          "srija class 10.pdf",
+          "flight.pdf",
+          "https://en.wikipedia.org/wiki/Anurag_Kashyap",
+          "anurag.pdf"
+        ]
+      }
+    }
+  },
+  "last_updated": "2025-04-23 20:12:22.316922"
+}
