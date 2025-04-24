@@ -242,7 +242,7 @@ def show_qa_page():
                             new_sources.append(file.name)
 
                         elif ext in ["csv", "xlsx", "json"]:
-                            df = load_structured_file(file, ext)
+                            df = parse_file(file, ext)
                             if isinstance(df, pd.DataFrame):
                                 structured_dfs.append((df, file.name))
                             else:
@@ -345,7 +345,7 @@ def show_qa_page():
                         if isinstance(var, go.Figure):
                             st.plotly_chart(var, use_container_width=True, key=f"plot_{idx}")
 
-                # ✅ Show final answer (without code block, clean if needed)
+                # Show final answer (without code block, clean if needed)
                 cleaned_answer = re.sub(r"```(?:python)?\s*([\s\S]*?)```", "", answer).strip()
                 if cleaned_answer:
                     st.markdown(cleaned_answer)

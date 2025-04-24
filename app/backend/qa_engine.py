@@ -2,42 +2,44 @@ import os
 from dotenv import load_dotenv
 import google.generativeai as genai
 from PIL import Image
+import streamlit as st
 
-# Load environment variables from .env file
+# Loading environment variables from .env file
 load_dotenv()
 
-# Configure Gemini API
-GEMINI_API_KEY = "AIzaSyCH9Rnf6PAmR0IpqUzcKH9WZEQBxYVY168"
-#AIzaSyAnfqjCG3sDs3QcopuRXAlGXM2SuIZplS8
-#AIzaSyDccyz5uH_a1vZTNGvxOeATRXyR45k21os
+# Retrieving Gemini API key from Streamlit secrets
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+
+# Raising error if API key is missing
 if not GEMINI_API_KEY:
     raise ValueError("Missing GEMINI_API_KEY in .env")
 
+# Configuring Gemini with the provided API key
 genai.configure(api_key=GEMINI_API_KEY)
 
-# Load models
-# Updated model initialization
+# Initializing Gemini models for text and vision processing
 text_model = genai.GenerativeModel("gemini-2.5-pro-exp-03-25")
 vision_model = genai.GenerativeModel("gemini-2.5-pro-exp-03-25")
 
 
-
 def answer_question(question, text_chunks, named_dfs=None, image_files=None):
+    # Merging all text chunks into a single context string
     text_context = "\n\n".join([text for text, _ in text_chunks])
 
-    # Create DataFrame description only if named_dfs exist
+    # Building structured data description if DataFrames are available
     if named_dfs:
         df_info = "\n".join([
             f"- `{name}` (from file '{filename}'): columns = {list(df.columns)}"
             for name, (df, filename) in named_dfs.items()
         ])
         df_section = f"""
-You have access to the following DataFrames (from uploaded files):
+You are having access to the following DataFrames (from uploaded files):
 {df_info}
 """
     else:
         df_section = ""
 
+    # Constructing the full prompt with all context
     prompt = f"""
 You are a data analyst assistant. Your task is to answer the user's question using the provided context. 
 
@@ -68,15 +70,17 @@ Question:
 """
 
     try:
+        # Generating response using the vision model if images are provided
         if image_files:
             images = [Image.open(img) for img in image_files]
             response = vision_model.generate_content([prompt] + images)
         else:
+            # Generating response using text-only model
             response = text_model.generate_content(prompt)
 
+        # Returning clean response text
         return response.text.strip()
 
     except Exception as e:
+        # Handling any exceptions from the Gemini API
         return f"⚠️ Gemini API Error: {str(e)}"
-
-

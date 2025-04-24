@@ -1,6 +1,6 @@
 # Don't upload API keys or secrets
 .env
-
+.streamlit/secrets.toml
 # IDE and Python junk
 __pycache__/
 *.pyc
