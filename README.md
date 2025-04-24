@@ -33,6 +33,9 @@ An intelligent, interactive Streamlit web app that enables users to upload docum
 
 ## 📦 Setup Instructions
 
+The app has also been deployed on streamlit community, to access it directly from there https://teamrocket.streamlit.app/ use the following app, it will ask you for email and name for it to load the chat history and then you can view the app, load documents and ask questions. 
+
+or you can follow the given instructions
 ### 1. Clone the Repo
 
 ```bash
@@ -40,5 +43,7 @@ git clone https://github.com/your-username/mando-ai-doc-qna.git
 cd mando-ai-doc-qna
 
 pip install -r requirements.txt
+
+can use streamlit run app/main.py to run the code 
 
 
