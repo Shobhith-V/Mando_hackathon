@@ -12,7 +12,7 @@ An intelligent, interactive Streamlit web app that enables users to upload docum
 - 🧠 **Code-Driven Insights**: Executes LLM-generated Python code for deeper data analysis.
 - 🖼️ **OCR for Images and PDFs**: Extracts text from scanned images and image-based PDFs.
 - 🔗 **Web Link Crawling**: Detects and extracts content from links found in uploaded documents.
-- 💬 **Chat Interface**: Maintains per-session Q&A chat history (optional).
+- 💬 **Chat Interface**: Maintains per-session Q&A chat history 
 - 📈 **Plotly Visualizations**: Dynamic interactive charts from your data.
 
 ---
